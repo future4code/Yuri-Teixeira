@@ -1,0 +1,35 @@
+DESCARTADO pois é mulher
+automoveis:Placa L337QE9
+automoveis-Marca: Honda
+automoveis-Cor: Azul
+automoveis-Proprietário: Erika Owens
+automoveis-Altura: 1,96 m
+automoveis-Peso: 99,8 kg
+
+DESCARTADA
+automoveis:Placa L337DV9
+automoveis-Marca: Honda
+automoveis-Cor: Azul
+automoveis-Proprietário: Joe Germuska
+automoveis-Altura: 1,88 m
+automoveis-Peso: 74,4 kg
+automoveis-
+
+ASSASSINO
+automoveis:Placa L3375A9
+automoveis-Marca: Honda
+automoveis-Cor: Azul
+automoveis-Proprietário: Jeremy Bowers
+automoveis-Altura: 1,86 m
+automoveis-Peso: 92,5 kg
+automoveis-
+
+DESCARTADA
+automoveis:Placa L337WR9
+automoveis-Marca: Honda
+automoveis-Cor: Azul
+automoveis-Proprietário: Jacqui Maher
+automoveis-Altura: 1,88 m
+automoveis-Peso: 59,0 kg
+automoveis-
+
