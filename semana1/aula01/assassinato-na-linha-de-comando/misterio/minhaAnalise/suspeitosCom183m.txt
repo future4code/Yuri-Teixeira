@@ -1,0 +1,1741 @@
+> grep -r -B 4 1,83 automoveis
+Placa 3ZZWYGH
+Marca: Volkswagen
+Cor: Verde
+Proprietário: Adrianti Tsirekidze
+Altura: 1,83 m
+--
+Placa BASRUZ9
+Marca: Volkswagen
+Cor: Rosa
+Proprietário: Bianca Al-Attiya
+Altura: 1,83 m
+--
+Placa OLVE0N5
+Marca: Nissan
+Cor: Amarela
+Proprietário: Peter Ochoa
+Altura: 1,83 m
+--
+Placa HR3GVRC
+Marca: Subaru
+Cor: Petróleo
+Proprietário: Oleksiy Ferrer
+Altura: 1,83 m
+--
+Placa ZRYI0P5
+Marca: Honda
+Cor: Verde
+Proprietário: Marianne Li
+Altura: 1,83 m
+--
+Placa OUM9U5D
+Marca: Honda
+Cor: Verde
+Proprietário: Emiliano Wenk
+Altura: 1,83 m
+--
+Placa ZM7VGM6
+Marca: Audi
+Cor: Dourada
+Proprietário: Rena Jankovic
+Altura: 1,83 m
+--
+Placa YM97412
+Marca: Mazda
+Cor: Azul
+Proprietário: Trey Kuczko
+Altura: 1,83 m
+--
+Placa 1Q2IN6X
+Marca: Audi
+Cor: Prata
+Proprietário: Emma Buckman
+Altura: 1,83 m
+--
+Placa EDINJYU
+Marca: Dodge
+Cor: Petróleo
+Proprietário: Anders Correa
+Altura: 1,83 m
+--
+Placa FF9UF7C
+Marca: Fiat
+Cor: Amarela
+Proprietário: Rafaela Moudatir
+Altura: 1,83 m
+--
+Placa B6M5QPY
+Marca: Volvo
+Cor: Amarela
+Proprietário: Ashley Tymoshchenko
+Altura: 1,83 m
+--
+Placa VI9D3JL
+Marca: Fiat
+Cor: Preta
+Proprietário: Petar Bauwens
+Altura: 1,83 m
+--
+Placa ZK2WB2Z
+Marca: Hyundai
+Cor: Vermelho
+Proprietário: Judith Williams
+Altura: 1,83 m
+--
+Placa 845AB9O
+Marca: Hyundai
+Cor: Amarela
+Proprietário: Mihail Flanigan
+Altura: 1,83 m
+--
+Placa DVKYAQ9
+Marca: Jaguar
+Cor: Vermelho
+Proprietário: Marouen Tatari
+Altura: 1,83 m
+--
+Placa IO4VAOL
+Marca: Mazda
+Cor: Amarela
+Proprietário: Rebecca Ruta
+Altura: 1,83 m
+--
+Placa PFU6DCT
+Marca: Mazda
+Cor: Petróleo
+Proprietário: Pierre-Alexis Steinegger
+Altura: 1,83 m
+--
+Placa R0PGIJH
+Marca: Jaguar
+Cor: Amarela
+Proprietário: Maria Kirkham
+Altura: 1,83 m
+--
+Placa PQNWLG0
+Marca: Subaru
+Cor: Preta
+Proprietário: Nicola Chan
+Altura: 1,83 m
+--
+Placa 7UNAZZC
+Marca: Honda
+Cor: Preta
+Proprietário: Richard Hybois
+Altura: 1,83 m
+--
+Placa MUPESLC
+Marca: Audi
+Cor: Laranja
+Proprietário: Lijiao Fumic
+Altura: 1,83 m
+--
+Placa WB26P18
+Marca: Volvo
+Cor: Verde
+Proprietário: Ates Wenger
+Altura: 1,83 m
+--
+Placa KORIH4B
+Marca: Ford
+Cor: Prata
+Proprietário: Erasmus Perez
+Altura: 1,83 m
+--
+Placa 8904IEZ
+Marca: Cadillac
+Cor: Dourada
+Proprietário: Bastian Horvat-Panda
+Altura: 1,83 m
+--
+Placa LH4G6NQ
+Marca: Volvo
+Cor: Dourada
+Proprietário: Roman Strajhar
+Altura: 1,83 m
+--
+Placa I6C34AW
+Marca: Ford
+Cor: Petróleo
+Proprietário: Jitka Mottram
+Altura: 1,83 m
+--
+Placa HGS967M
+Marca: Dodge
+Cor: Preta
+Proprietário: Tomasz Mun
+Altura: 1,83 m
+--
+Placa 3E5QTCU
+Marca: BMW
+Cor: Verde
+Proprietário: Tervel Pilipenko
+Altura: 1,83 m
+--
+Placa VYECF8O
+Marca: Dodge
+Cor: Prata
+Proprietário: Luc Reyes
+Altura: 1,83 m
+--
+Placa 20SQONU
+Marca: Jeep
+Cor: Azul
+Proprietário: Mathieu Pigot
+Altura: 1,83 m
+--
+Placa UGKDXSV
+Marca: Nissan
+Cor: Rosa
+Proprietário: Diego Dahlkvist
+Altura: 1,83 m
+--
+Placa JN4KEHU
+Marca: Ford
+Cor: Preta
+Proprietário: Maksim Chibosso
+Altura: 1,83 m
+--
+Placa 0UBCXZ5
+Marca: BMW
+Cor: Rosa
+Proprietário: Kristina Sokhiev
+Altura: 1,83 m
+--
+Placa C3P6M98
+Marca: Audi
+Cor: Verde
+Proprietário: Dilshod Allen
+Altura: 1,83 m
+--
+Placa DEVFBFA
+Marca: Mazda
+Cor: Vermelho
+Proprietário: Laurence Hirata
+Altura: 1,83 m
+--
+Placa IIV6QIM
+Marca: Hyundai
+Cor: Branca
+Proprietário: Victoria Davis
+Altura: 1,83 m
+--
+Placa 5UVHAWE
+Marca: Cadillac
+Cor: Azul
+Proprietário: Bruno Tomas
+Altura: 1,83 m
+--
+Placa CMUYL7Z
+Marca: Volkswagen
+Cor: Azul
+Proprietário: Andrei Delattre-Demory
+Altura: 1,83 m
+--
+Placa QN22Z53
+Marca: Nissan
+Cor: Dourada
+Proprietário: Niki Grangeon
+Altura: 1,83 m
+--
+Placa IVF0R7E
+Marca: Dodge
+Cor: Branca
+Proprietário: Tamas Fredericks
+Altura: 1,83 m
+--
+Placa M50ZKKR
+Marca: Toyota
+Cor: Preta
+Proprietário: Luka Begu
+Altura: 1,83 m
+--
+Placa 1R6EJG2
+Marca: Jaguar
+Cor: Preta
+Proprietário: Bogdan Zavadova
+Altura: 1,83 m
+--
+Placa G1JM8B0
+Marca: Audi
+Cor: Petróleo
+Proprietário: Christopher Armstrong
+Altura: 1,83 m
+--
+Placa 7WLI8EF
+Marca: Ford
+Cor: Dourada
+Proprietário: Jaromir Lawrence
+Altura: 1,83 m
+--
+Placa KSCWIG3
+Marca: Volvo
+Cor: Azul
+Proprietário: Juan Oiwa
+Altura: 1,83 m
+--
+Placa 4Y1T3HE
+Marca: Jaguar
+Cor: Amarela
+Proprietário: Massimo Groot
+Altura: 1,83 m
+--
+Placa ACS2G1P
+Marca: Hyundai
+Cor: Preta
+Proprietário: Ebrahim Baggaley
+Altura: 1,83 m
+--
+Placa C6EWTZ0
+Marca: Subaru
+Cor: Rosa
+Proprietário: Fabiana Boussoughou
+Altura: 1,83 m
+--
+Placa TPNDYI1
+Marca: Toyota
+Cor: Branca
+Proprietário: Giulia Freden
+Altura: 1,83 m
+--
+Placa HOSLINC
+Marca: Cadillac
+Cor: Verde
+Proprietário: Alejandro Abdi
+Altura: 1,83 m
+--
+Placa LZSI0VD
+Marca: Toyota
+Cor: Prata
+Proprietário: Ellen Liivamagi
+Altura: 1,83 m
+--
+Placa IV264KW
+Marca: Audi
+Cor: Amarela
+Proprietário: Sena Pietrus
+Altura: 1,83 m
+--
+Placa 94TJAUN
+Marca: BMW
+Cor: Petróleo
+Proprietário: Tetsuya Tereshchuk
+Altura: 1,83 m
+--
+Placa F3OAF7I
+Marca: Ford
+Cor: Dourada
+Proprietário: Jirina Hojka
+Altura: 1,83 m
+--
+Placa S715H3V
+Marca: Hyundai
+Cor: Amarela
+Proprietário: Seongeun Magdanis
+Altura: 1,83 m
+--
+Placa HL4N7AA
+Marca: Volkswagen
+Cor: Verde
+Proprietário: Michelle-Lee Abril
+Altura: 1,83 m
+--
+Placa K1OU3X8
+Marca: Honda
+Cor: Dourada
+Proprietário: Yasunari Inzikuru
+Altura: 1,83 m
+--
+Placa VO3FKUM
+Marca: Cadillac
+Cor: Petróleo
+Proprietário: Rachel Burrows
+Altura: 1,83 m
+--
+Placa CRWR9T2
+Marca: Cadillac
+Cor: Branca
+Proprietário: Kyung Steffensen
+Altura: 1,83 m
+--
+Placa LU1X5B3
+Marca: Mazda
+Cor: Branca
+Proprietário: Micheen Zhang
+Altura: 1,83 m
+--
+Placa 6BYDDL3
+Marca: Nissan
+Cor: Branca
+Proprietário: Yadira Marghiev
+Altura: 1,83 m
+--
+Placa KFNY440
+Marca: Subaru
+Cor: Branca
+Proprietário: Yi Daba
+Altura: 1,83 m
+--
+Placa PL93ZP8
+Marca: Ford
+Cor: Azul
+Proprietário: Facinet Ratna
+Altura: 1,83 m
+--
+Placa JCB08BZ
+Marca: Toyota
+Cor: Branca
+Proprietário: Francesco Branza
+Altura: 1,83 m
+--
+Placa ROBC4LG
+Marca: Dodge
+Cor: Branca
+Proprietário: Michal Bazlen
+Altura: 1,83 m
+--
+Placa VTMLLGF
+Marca: Audi
+Cor: Verde
+Proprietário: Christopher Flood
+Altura: 1,83 m
+--
+Placa KV7AXR5
+Marca: Hyundai
+Cor: Prata
+Proprietário: Aretha Hatton
+Altura: 1,83 m
+--
+Placa HOHOUE2
+Marca: Jeep
+Cor: Prata
+Proprietário: Mirna Seck
+Altura: 1,83 m
+--
+Placa GSZQZ6Y
+Marca: Jeep
+Cor: Prata
+Proprietário: Oribe Bidaoui
+Altura: 1,83 m
+--
+Placa DMEDQ5H
+Marca: Jeep
+Cor: Dourada
+Proprietário: Nick O'farrell
+Altura: 1,83 m
+--
+Placa MHBZVH5
+Marca: Jeep
+Cor: Rosa
+Proprietário: Alexey Gille
+Altura: 1,83 m
+--
+Placa 4M6YZAF
+Marca: Fiat
+Cor: Laranja
+Proprietário: Isiah Lacuna
+Altura: 1,83 m
+--
+Placa KB1LM0Y
+Marca: Mazda
+Cor: Prata
+Proprietário: Eloyse Vocht
+Altura: 1,83 m
+--
+Placa RXM9OH8
+Marca: Jeep
+Cor: Rosa
+Proprietário: Timea Nus
+Altura: 1,83 m
+--
+Placa GXVNZW4
+Marca: Nissan
+Cor: Preta
+Proprietário: Elena Rezende
+Altura: 1,83 m
+--
+Placa WC3T948
+Marca: BMW
+Cor: Petróleo
+Proprietário: Joao Dovgodko
+Altura: 1,83 m
+--
+Placa Y6BFZW2
+Marca: Jaguar
+Cor: Branca
+Proprietário: Larisa Kryvitski
+Altura: 1,83 m
+--
+Placa J9JNUKN
+Marca: Audi
+Cor: Branca
+Proprietário: Ander Moolman
+Altura: 1,83 m
+--
+Placa 92OVPDW
+Marca: Honda
+Cor: Prata
+Proprietário: Lisa Peralta
+Altura: 1,83 m
+--
+Placa G3PXSRN
+Marca: Fiat
+Cor: Verde
+Proprietário: Luisa Hultzer
+Altura: 1,83 m
+--
+Placa 4YXFBPF
+Marca: Toyota
+Cor: Rosa
+Proprietário: Sarah Kim
+Altura: 1,83 m
+--
+Placa TQJPMC2
+Marca: Volkswagen
+Cor: Petróleo
+Proprietário: Oliver Wu
+Altura: 1,83 m
+--
+Placa SJAMBSR
+Marca: Dodge
+Cor: Rosa
+Proprietário: Shao Watt
+Altura: 1,83 m
+--
+Placa EIR762G
+Marca: Fiat
+Cor: Verde
+Proprietário: Astrid Kusznierewicz
+Altura: 1,83 m
+--
+Placa VOBAFR3
+Marca: Volkswagen
+Cor: Rosa
+Proprietário: Danila Henao
+Altura: 1,83 m
+--
+Placa F34NT82
+Marca: Volvo
+Cor: Branca
+Proprietário: Dong-Young Kim
+Altura: 1,83 m
+--
+Placa XP5NVWY
+Marca: Audi
+Cor: Dourada
+Proprietário: Abdelhamid Cabrera
+Altura: 1,83 m
+--
+Placa 5K32RQ1
+Marca: Subaru
+Cor: Laranja
+Proprietário: Nelly Rumjancevs
+Altura: 1,83 m
+--
+Placa NXUPQDP
+Marca: Cadillac
+Cor: Vermelho
+Proprietário: Winston Li
+Altura: 1,83 m
+--
+Placa NOHLUJO
+Marca: Volvo
+Cor: Amarela
+Proprietário: Amel Ochoa
+Altura: 1,83 m
+--
+Placa DEMWOXX
+Marca: Cadillac
+Cor: Dourada
+Proprietário: Michael Tayama
+Altura: 1,83 m
+--
+Placa 7LIOQRA
+Marca: Nissan
+Cor: Branca
+Proprietário: Mink Hernandez
+Altura: 1,83 m
+--
+Placa ZZHE735
+Marca: Toyota
+Cor: Branca
+Proprietário: Jianfei Erokhin
+Altura: 1,83 m
+--
+Placa TZCWQ48
+Marca: Ford
+Cor: Azul
+Proprietário: Zhizhi Kehoe
+Altura: 1,83 m
+--
+Placa 6K5XU3Z
+Marca: Toyota
+Cor: Vermelho
+Proprietário: Casey Gantumur
+Altura: 1,83 m
+--
+Placa TU2MK4Q
+Marca: Jeep
+Cor: Dourada
+Proprietário: Westley Tatalashvili
+Altura: 1,83 m
+--
+Placa IYZ7Q4T
+Marca: Subaru
+Cor: Amarela
+Proprietário: Camille Andersen
+Altura: 1,83 m
+--
+Placa GQCGRTB
+Marca: Dodge
+Cor: Verde
+Proprietário: Mindaugas Saleh
+Altura: 1,83 m
+--
+Placa 5XUNKXM
+Marca: Mazda
+Cor: Vermelho
+Proprietário: Carlos Cebrian
+Altura: 1,83 m
+--
+Placa 6J2NKE6
+Marca: Ford
+Cor: Branca
+Proprietário: Natsumi Pohlak
+Altura: 1,83 m
+--
+Placa 2MCIVXB
+Marca: Dodge
+Cor: Verde
+Proprietário: Sung Dyadchuk
+Altura: 1,83 m
+--
+Placa U5VP3OA
+Marca: Jeep
+Cor: Petróleo
+Proprietário: Haojie Fernandez
+Altura: 1,83 m
+--
+Placa W0FNWRB
+Marca: Cadillac
+Cor: Prata
+Proprietário: Thomas Shmidt
+Altura: 1,83 m
+--
+Placa 2C7E8E3
+Marca: Mazda
+Cor: Prata
+Proprietário: Duhaeng Agren
+Altura: 1,83 m
+--
+Placa QFR1YYZ
+Marca: Toyota
+Cor: Laranja
+Proprietário: Denis Rezola
+Altura: 1,83 m
+--
+Placa 7K17404
+Marca: Nissan
+Cor: Prata
+Proprietário: Brittany Terraza
+Altura: 1,83 m
+--
+Placa 27E5NJY
+Marca: Hyundai
+Cor: Laranja
+Proprietário: Abderrahime Arcioni
+Altura: 1,83 m
+--
+Placa 6ZMS586
+Marca: Hyundai
+Cor: Amarela
+Proprietário: Lyudmyla Dilmukhamedov
+Altura: 1,83 m
+--
+Placa 17M8SYW
+Marca: Subaru
+Cor: Laranja
+Proprietário: Felix Verbij
+Altura: 1,83 m
+--
+Placa D5K4JUQ
+Marca: Dodge
+Cor: Laranja
+Proprietário: Julie Basha
+Altura: 1,83 m
+--
+Placa FX78BBQ
+Marca: BMW
+Cor: Preta
+Proprietário: Nikolaos Bauer
+Altura: 1,83 m
+--
+Placa 8ST1H7M
+Marca: Hyundai
+Cor: Rosa
+Proprietário: Crisanto Saikawa
+Altura: 1,83 m
+--
+Placa SE72IT4
+Marca: Subaru
+Cor: Vermelho
+Proprietário: Ling Langridge
+Altura: 1,83 m
+--
+Placa L1F0NJM
+Marca: Toyota
+Cor: Prata
+Proprietário: Nurmakhan Hoskins
+Altura: 1,83 m
+--
+Placa 1WI4TUL
+Marca: BMW
+Cor: Amarela
+Proprietário: Aman Al-Jumaili
+Altura: 1,83 m
+--
+Placa ZWUKAKD
+Marca: Dodge
+Cor: Preta
+Proprietário: Elodie Muniain
+Altura: 1,83 m
+--
+Placa 7NTNTYT
+Marca: Cadillac
+Cor: Verde
+Proprietário: Alena Davis
+Altura: 1,83 m
+--
+Placa 89TXK3O
+Marca: Jaguar
+Cor: Vermelho
+Proprietário: Carole Adams
+Altura: 1,83 m
+--
+Placa KBDFZVM
+Marca: Mazda
+Cor: Rosa
+Proprietário: Limei Ioannou
+Altura: 1,83 m
+--
+Placa ROHCMKU
+Marca: BMW
+Cor: Petróleo
+Proprietário: Gergo Faulkner
+Altura: 1,83 m
+--
+Placa AHSS2RI
+Marca: Audi
+Cor: Vermelho
+Proprietário: Robin Vesely
+Altura: 1,83 m
+--
+Placa WYSGPZS
+Marca: Volkswagen
+Cor: Vermelho
+Proprietário: Franck Elkhedr
+Altura: 1,83 m
+--
+Placa 1NBOMR7
+Marca: Cadillac
+Cor: Laranja
+Proprietário: Jackeline Caze
+Altura: 1,83 m
+--
+Placa AVWU88X
+Marca: BMW
+Cor: Preta
+Proprietário: Marie-Andree Dalby
+Altura: 1,83 m
+--
+Placa ENHPXNF
+Marca: Jaguar
+Cor: Rosa
+Proprietário: Nigel Hejmej
+Altura: 1,83 m
+--
+Placa N24SAED
+Marca: Nissan
+Cor: Dourada
+Proprietário: Dawoud Atari
+Altura: 1,83 m
+--
+Placa 9YTOS0C
+Marca: Nissan
+Cor: Prata
+Proprietário: Lapua Zeller
+Altura: 1,83 m
+--
+Placa GP75V4L
+Marca: Audi
+Cor: Azul
+Proprietário: Soren Dickens
+Altura: 1,83 m
+--
+Placa AX17SE3
+Marca: Subaru
+Cor: Branca
+Proprietário: Yuya Machtig
+Altura: 1,83 m
+--
+Placa KHFVJ85
+Marca: Fiat
+Cor: Petróleo
+Proprietário: Andrija Schulz
+Altura: 1,83 m
+--
+Placa ODJWBLW
+Marca: Audi
+Cor: Preta
+Proprietário: Lars Mcclatchey
+Altura: 1,83 m
+--
+Placa TK7HFS7
+Marca: Cadillac
+Cor: Preta
+Proprietário: Pedro Egelstaff
+Altura: 1,83 m
+--
+Placa 6SGHMB7
+Marca: Mazda
+Cor: Rosa
+Proprietário: Rui Loukas
+Altura: 1,83 m
+--
+Placa 5W6HFM7
+Marca: Nissan
+Cor: Petróleo
+Proprietário: Toni Chambers
+Altura: 1,83 m
+--
+Placa WVS1EMP
+Marca: Fiat
+Cor: Vermelho
+Proprietário: Lankantien Kristensen
+Altura: 1,83 m
+--
+Placa 7UZYE3J
+Marca: Subaru
+Cor: Amarela
+Proprietário: Kyle Wang
+Altura: 1,83 m
+--
+Placa OFMJHOS
+Marca: Honda
+Cor: Vermelho
+Proprietário: Sergey Vasilionak
+Altura: 1,83 m
+--
+Placa DT8SKQ3
+Marca: Honda
+Cor: Prata
+Proprietário: Kim Estrada
+Altura: 1,83 m
+--
+Placa HKR0DUE
+Marca: Volvo
+Cor: Branca
+Proprietário: Abdelaziz Durant
+Altura: 1,83 m
+--
+Placa 9HIMAN6
+Marca: Volvo
+Cor: Branca
+Proprietário: Rosie Fredricson
+Altura: 1,83 m
+--
+Placa 5RRJCM5
+Marca: Nissan
+Cor: Verde
+Proprietário: Esmeral Gyurta
+Altura: 1,83 m
+--
+Placa 75YSFQC
+Marca: Ford
+Cor: Laranja
+Proprietário: Victoria Mohamed
+Altura: 1,83 m
+--
+Placa YF0KMLX
+Marca: Volkswagen
+Cor: Amarela
+Proprietário: Ahmed Weir
+Altura: 1,83 m
+--
+Placa GEEUUX9
+Marca: Subaru
+Cor: Dourada
+Proprietário: Lorena Bosetti
+Altura: 1,83 m
+--
+Placa BAZBKKM
+Marca: Jaguar
+Cor: Branca
+Proprietário: Katarina Taea
+Altura: 1,83 m
+--
+Placa LW5S6QH
+Marca: Jeep
+Cor: Vermelho
+Proprietário: Guilherme Zhang
+Altura: 1,83 m
+--
+Placa E1MPRDB
+Marca: Mazda
+Cor: Laranja
+Proprietário: Ryan Bouaasayriya
+Altura: 1,83 m
+--
+Placa 48XFZ2F
+Marca: Subaru
+Cor: Azul
+Proprietário: Igor Martin
+Altura: 1,83 m
+--
+Placa SYQ0CXZ
+Marca: Dodge
+Cor: Dourada
+Proprietário: Volha Otsuka
+Altura: 1,83 m
+--
+Placa UYMQ68U
+Marca: Hyundai
+Cor: Rosa
+Proprietário: Nenad Moran
+Altura: 1,83 m
+--
+Placa OEZGL21
+Marca: Honda
+Cor: Preta
+Proprietário: Urs Kim
+Altura: 1,83 m
+--
+Placa Y4ZQY39
+Marca: Subaru
+Cor: Verde
+Proprietário: Molly Cerdeira
+Altura: 1,83 m
+--
+Placa JSDG0PV
+Marca: Volvo
+Cor: Preta
+Proprietário: Cristiane Forciniti
+Altura: 1,83 m
+--
+Placa D8ANDHG
+Marca: Jeep
+Cor: Prata
+Proprietário: Corinna Guzzetti
+Altura: 1,83 m
+--
+Placa 08G6DXU
+Marca: Honda
+Cor: Verde
+Proprietário: Benjamin Jeong
+Altura: 1,83 m
+--
+Placa P2XJCHU
+Marca: Volvo
+Cor: Verde
+Proprietário: Florent Icho
+Altura: 1,83 m
+--
+Placa CJCKDEY
+Marca: Nissan
+Cor: Dourada
+Proprietário: Jiaxing Bespalova
+Altura: 1,83 m
+--
+Placa 5PB0BQK
+Marca: Ford
+Cor: Amarela
+Proprietário: Fabian Knight
+Altura: 1,83 m
+--
+Placa O3XA89T
+Marca: Toyota
+Cor: Laranja
+Proprietário: Mourad Nimke
+Altura: 1,83 m
+--
+Placa L7FAK0D
+Marca: Honda
+Cor: Vermelho
+Proprietário: Jack Shafar
+Altura: 1,83 m
+--
+Placa 34W6LH4
+Marca: Mazda
+Cor: Rosa
+Proprietário: Julian Mehmedi
+Altura: 1,83 m
+--
+Placa Z0PJQ6H
+Marca: Audi
+Cor: Branca
+Proprietário: Katsiaryna Lang
+Altura: 1,83 m
+--
+Placa RF7L2OL
+Marca: Nissan
+Cor: Rosa
+Proprietário: Mahe Ivashko
+Altura: 1,83 m
+--
+Placa 61HIOM4
+Marca: Cadillac
+Cor: Azul
+Proprietário: Hiroshi Schuring
+Altura: 1,83 m
+--
+Placa VWUG8DS
+Marca: Volvo
+Cor: Branca
+Proprietário: Tina Lim
+Altura: 1,83 m
+--
+Placa WJ5EYGS
+Marca: Dodge
+Cor: Petróleo
+Proprietário: Shana Halsall
+Altura: 1,83 m
+--
+Placa 734REN8
+Marca: Dodge
+Cor: Vermelho
+Proprietário: Anja Abakumova
+Altura: 1,83 m
+--
+Placa VY9UN2B
+Marca: Fiat
+Cor: Preta
+Proprietário: Thomas Shen
+Altura: 1,83 m
+--
+Placa S16K3ZJ
+Marca: Subaru
+Cor: Prata
+Proprietário: Marcel Redhead
+Altura: 1,83 m
+--
+Placa MTHZDI2
+Marca: Dodge
+Cor: Rosa
+Proprietário: Jan-Di Resch
+Altura: 1,83 m
+--
+Placa PCL52RP
+Marca: Fiat
+Cor: Amarela
+Proprietário: Thiago Bruno
+Altura: 1,83 m
+--
+Placa 20IXPWF
+Marca: Subaru
+Cor: Laranja
+Proprietário: Grete Makaranka
+Altura: 1,83 m
+--
+Placa XHZVUCR
+Marca: Toyota
+Cor: Vermelho
+Proprietário: Stepan Gallantree
+Altura: 1,83 m
+--
+Placa MF1R1J5
+Marca: Jeep
+Cor: Azul
+Proprietário: Marius Davies
+Altura: 1,83 m
+--
+Placa E5BDF5C
+Marca: Fiat
+Cor: Dourada
+Proprietário: Jihyun Aljand
+Altura: 1,83 m
+--
+Placa UJYTVBL
+Marca: Mazda
+Cor: Branca
+Proprietário: Ida Robinson
+Altura: 1,83 m
+--
+Placa XT50Q6D
+Marca: Ford
+Cor: Vermelho
+Proprietário: Jur Gebremeskel
+Altura: 1,83 m
+--
+Placa P0BP5XJ
+Marca: Cadillac
+Cor: Preta
+Proprietário: Schillonie Benaissa
+Altura: 1,83 m
+--
+Placa XAVIVG5
+Marca: Dodge
+Cor: Preta
+Proprietário: El-Sayed Prodius
+Altura: 1,83 m
+--
+Placa QQRYADX
+Marca: Jaguar
+Cor: Vermelho
+Proprietário: Desiree Kavcic
+Altura: 1,83 m
+--
+Placa CRI33V2
+Marca: Subaru
+Cor: Petróleo
+Proprietário: Vincent Lawrence
+Altura: 1,83 m
+--
+Placa 4P7X7I3
+Marca: Audi
+Cor: Verde
+Proprietário: Kieran Bayaraa
+Altura: 1,83 m
+--
+Placa DR5K2LG
+Marca: Subaru
+Cor: Vermelho
+Proprietário: Laura Barry
+Altura: 1,83 m
+--
+Placa ZD9OEFO
+Marca: Subaru
+Cor: Dourada
+Proprietário: Erica Velez
+Altura: 1,83 m
+--
+Placa B4EMKG7
+Marca: Jeep
+Cor: Amarela
+Proprietário: Eddermys Djokovic
+Altura: 1,83 m
+--
+Placa 90NZU1V
+Marca: Cadillac
+Cor: Verde
+Proprietário: Gabor Almeida
+Altura: 1,83 m
+--
+Placa DO02U0I
+Marca: BMW
+Cor: Verde
+Proprietário: Xavier Kiprop
+Altura: 1,83 m
+--
+Placa HFR9599
+Marca: Nissan
+Cor: Branca
+Proprietário: Marharyta Khakhlova
+Altura: 1,83 m
+--
+Placa EK66V0B
+Marca: Hyundai
+Cor: Branca
+Proprietário: Ondrej Houssaye
+Altura: 1,83 m
+--
+Placa X8UIAOH
+Marca: Subaru
+Cor: Branca
+Proprietário: Emma Alphen
+Altura: 1,83 m
+--
+Placa 04R15BU
+Marca: Mazda
+Cor: Branca
+Proprietário: Lidia Bird
+Altura: 1,83 m
+--
+Placa G8LU48U
+Marca: Honda
+Cor: Rosa
+Proprietário: Ligia Czakova
+Altura: 1,83 m
+--
+Placa 2X4N9OH
+Marca: Volvo
+Cor: Prata
+Proprietário: Maria Clapcich
+Altura: 1,83 m
+--
+Placa 14TAZZG
+Marca: Subaru
+Cor: Petróleo
+Proprietário: Anja Cojuhari
+Altura: 1,83 m
+--
+Placa 5Y3ID3L
+Marca: Jeep
+Cor: Petróleo
+Proprietário: Rand Fanchette
+Altura: 1,83 m
+--
+Placa 22DZ5R4
+Marca: Cadillac
+Cor: Branca
+Proprietário: Natalia Fettouhi
+Altura: 1,83 m
+--
+Placa ZLJXQV1
+Marca: Fiat
+Cor: Dourada
+Proprietário: Kelita Wood
+Altura: 1,83 m
+--
+Placa MVZXQ8C
+Marca: Fiat
+Cor: Amarela
+Proprietário: Pawel Tobin
+Altura: 1,83 m
+--
+Placa DLXYRQI
+Marca: Jaguar
+Cor: Petróleo
+Proprietário: Britany Oatley
+Altura: 1,83 m
+--
+Placa RFUXIV1
+Marca: Honda
+Cor: Petróleo
+Proprietário: Saralee Wilson
+Altura: 1,83 m
+--
+Placa 2MRUM59
+Marca: Jeep
+Cor: Verde
+Proprietário: Gia Yoon
+Altura: 1,83 m
+--
+Placa IJNUKMC
+Marca: Jaguar
+Cor: Dourada
+Proprietário: Robbert Kanerva
+Altura: 1,83 m
+--
+Placa AEXI7DT
+Marca: Dodge
+Cor: Preta
+Proprietário: Fabiola Alfaro
+Altura: 1,83 m
+--
+Placa 2U77IH2
+Marca: Subaru
+Cor: Azul
+Proprietário: Olga Brize
+Altura: 1,83 m
+--
+Placa JIBX8UU
+Marca: Fiat
+Cor: Petróleo
+Proprietário: Rachelle Cherniavska
+Altura: 1,83 m
+--
+Placa Y83VCEI
+Marca: BMW
+Cor: Amarela
+Proprietário: Ponloeu Inthavong
+Altura: 1,83 m
+--
+Placa AU2O6YN
+Marca: Audi
+Cor: Laranja
+Proprietário: Niklas Capelli
+Altura: 1,83 m
+--
+Placa 44V9Y6Y
+Marca: Hyundai
+Cor: Vermelho
+Proprietário: Anabel Mesfioui
+Altura: 1,83 m
+--
+Placa 3DPBRKE
+Marca: Toyota
+Cor: Prata
+Proprietário: Ana Tursunov
+Altura: 1,83 m
+--
+Placa KX2V10X
+Marca: Volvo
+Cor: Dourada
+Proprietário: Zuzana Maroiu
+Altura: 1,83 m
+--
+Placa S9ATO1V
+Marca: Dodge
+Cor: Laranja
+Proprietário: Ludivine Schuerch
+Altura: 1,83 m
+--
+Placa DYM22RS
+Marca: Ford
+Cor: Rosa
+Proprietário: Shu-Ching Ribas
+Altura: 1,83 m
+--
+Placa H0V8N79
+Marca: Volvo
+Cor: Laranja
+Proprietário: Emanuele Oulmou
+Altura: 1,83 m
+--
+Placa O9MNBCN
+Marca: BMW
+Cor: Verde
+Proprietário: Besik Unsworth
+Altura: 1,83 m
+--
+Placa UZ2IMR1
+Marca: Mazda
+Cor: Preta
+Proprietário: Jangy Scott-Arruda
+Altura: 1,83 m
+--
+Placa ZH5GS50
+Marca: Ford
+Cor: Prata
+Proprietário: Paul Mndaweni
+Altura: 1,83 m
+--
+Placa QABFBA0
+Marca: Fiat
+Cor: Rosa
+Proprietário: Yumeka Rejepov
+Altura: 1,83 m
+--
+Placa PKPCDUN
+Marca: Subaru
+Cor: Preta
+Proprietário: Ash Buckland
+Altura: 1,83 m
+--
+Placa XUEXBZ4
+Marca: Audi
+Cor: Prata
+Proprietário: Fabio Morkov
+Altura: 1,83 m
+--
+Placa DVM4BF1
+Marca: Subaru
+Cor: Preta
+Proprietário: Tontowi Benedetti
+Altura: 1,83 m
+--
+Placa QGMM7I4
+Marca: Audi
+Cor: Vermelho
+Proprietário: Yoon Kelsey
+Altura: 1,83 m
+--
+Placa K0EJ545
+Marca: Ford
+Cor: Azul
+Proprietário: Stany Spellerberg
+Altura: 1,83 m
+--
+Placa 9QHEB8M
+Marca: Nissan
+Cor: Branca
+Proprietário: Vera Frangilli
+Altura: 1,83 m
+--
+Placa IS7XPQA
+Marca: Cadillac
+Cor: Dourada
+Proprietário: Maximilian James
+Altura: 1,83 m
+--
+Placa E9JGO52
+Marca: BMW
+Cor: Preta
+Proprietário: Kyoko Bennett
+Altura: 1,83 m
+--
+Placa 0TE5U62
+Marca: Dodge
+Cor: Azul
+Proprietário: Lyubov Gunnewijk
+Altura: 1,83 m
+--
+Placa 52XC6XV
+Marca: Ford
+Cor: Branca
+Proprietário: David Moutton
+Altura: 1,83 m
+--
+Placa VQGOX71
+Marca: Mazda
+Cor: Laranja
+Proprietário: Jing Sprunger
+Altura: 1,83 m
+--
+Placa 03P0P7W
+Marca: Subaru
+Cor: Petróleo
+Proprietário: Konstantin Papachristos
+Altura: 1,83 m
+--
+Placa O4CFL92
+Marca: Ford
+Cor: Amarela
+Proprietário: Kim Mahran
+Altura: 1,83 m
+--
+Placa 7WVUKXP
+Marca: BMW
+Cor: Prata
+Proprietário: Karl-Martin Adlington
+Altura: 1,83 m
+--
+Placa GDU5PF9
+Marca: Audi
+Cor: Dourada
+Proprietário: Konrad Haddad
+Altura: 1,83 m
+--
+Placa UAQ37H1
+Marca: Hyundai
+Cor: Prata
+Proprietário: Hao Kostelecky
+Altura: 1,83 m
+--
+Placa R2A6BZX
+Marca: Audi
+Cor: Vermelho
+Proprietário: Srdjan Stein
+Altura: 1,83 m
+--
+Placa PDKM5J2
+Marca: Fiat
+Cor: Petróleo
+Proprietário: Linus Cha
+Altura: 1,83 m
+--
+Placa CVBTWNZ
+Marca: Dodge
+Cor: Branca
+Proprietário: Ivan Caballero
+Altura: 1,83 m
+--
+Placa GKC1DSM
+Marca: Jeep
+Cor: Preta
+Proprietário: Tiffany Zeid
+Altura: 1,83 m
+--
+Placa Q82B3LI
+Marca: Jaguar
+Cor: Prata
+Proprietário: Aleksei Wang
+Altura: 1,83 m
+--
+Placa FYMQ0EI
+Marca: Audi
+Cor: Verde
+Proprietário: Esther Churakova
+Altura: 1,83 m
+--
+Placa FFLJZ1U
+Marca: Audi
+Cor: Laranja
+Proprietário: Niklas Donckers
+Altura: 1,83 m
+--
+Placa ZMNKHU2
+Marca: Toyota
+Cor: Azul
+Proprietário: Hiroki Klokov
+Altura: 1,83 m
+--
+Placa 7HR23XT
+Marca: Subaru
+Cor: Amarela
+Proprietário: Jehue Wild
+Altura: 1,83 m
+--
+Placa 4FSXDZ0
+Marca: Audi
+Cor: Verde
+Proprietário: Takayuki Ramirez
+Altura: 1,83 m
+--
+Placa JONIBRD
+Marca: Jeep
+Cor: Amarela
+Proprietário: Eric Gogaev
+Altura: 1,83 m
+--
+Placa IS34CNG
+Marca: Hyundai
+Cor: Preta
+Proprietário: Kyle Marcus
+Altura: 1,83 m
+--
+Placa 8B60DB2
+Marca: Toyota
+Cor: Rosa
+Proprietário: Olena Turei
+Altura: 1,83 m
+--
+Placa L7CCDR9
+Marca: Volkswagen
+Cor: Prata
+Proprietário: Junjing Kang
+Altura: 1,83 m
+--
+Placa V7RWC2M
+Marca: Ford
+Cor: Vermelho
+Proprietário: Karsten Bidaryan
+Altura: 1,83 m
+--
+Placa XSF733T
+Marca: Subaru
+Cor: Petróleo
+Proprietário: Casey Cullen
+Altura: 1,83 m
+--
+Placa JHKJE4A
+Marca: Honda
+Cor: Dourada
+Proprietário: Mclain Rakoczy
+Altura: 1,83 m
+--
+Placa IEG1TEN
+Marca: Jaguar
+Cor: Laranja
+Proprietário: Jessica Hemthon
+Altura: 1,83 m
+--
+Placa SR7LTAV
+Marca: Cadillac
+Cor: Amarela
+Proprietário: Yu Sakaguchi
+Altura: 1,83 m
+--
+Placa CGIHCH1
+Marca: BMW
+Cor: Dourada
+Proprietário: Natalia Benedetti
+Altura: 1,83 m
+--
+Placa KF7IK36
+Marca: Toyota
+Cor: Amarela
+Proprietário: Alvaro Viljoen
+Altura: 1,83 m
+--
+Placa T9CGC0P
+Marca: BMW
+Cor: Verde
+Proprietário: Lance Maksimovic
+Altura: 1,83 m
+--
+Placa D81PNT0
+Marca: Honda
+Cor: Azul
+Proprietário: Marharyta Willmott
+Altura: 1,83 m
+--
+Placa Y5V8AIM
+Marca: Subaru
+Cor: Amarela
+Proprietário: Julien Chen
+Altura: 1,83 m
+--
+Placa W3M97N4
+Marca: Volvo
+Cor: Vermelho
+Proprietário: Evagelos Felix
+Altura: 1,83 m
+--
+Placa S66PKNI
+Marca: Cadillac
+Cor: Verde
+Proprietário: Samira Ri
+Altura: 1,83 m
+--
+Placa 3WHAVHV
+Marca: Volvo
+Cor: Azul
+Proprietário: Gyujin Scanlan
+Altura: 1,83 m
+--
+Placa NFRQN0K
+Marca: Toyota
+Cor: Petróleo
+Proprietário: Yevgeniy Gushchina
+Altura: 1,83 m
+--
+Placa BWH22KF
+Marca: Volvo
+Cor: Azul
+Proprietário: Matthew Jamal
+Altura: 1,83 m
+--
+Placa F7W6N5U
+Marca: Ford
+Cor: Amarela
+Proprietário: Thomas Jurkowski
+Altura: 1,83 m
+--
+Placa 3037RZK
+Marca: Cadillac
+Cor: Verde
+Proprietário: Fabienne Bouw
+Altura: 1,83 m
+--
+Placa CL6SGVB
+Marca: Subaru
+Cor: Verde
+Proprietário: David Belete
+Altura: 1,83 m
+--
+Placa SZX95D0
+Marca: Honda
+Cor: Petróleo
+Proprietário: Radoslaw Licona
+Altura: 1,83 m
+--
+Placa 0HFQ1MD
+Marca: Hyundai
+Cor: Amarela
+Proprietário: Wassim Matsumoto
+Altura: 1,83 m
+--
+Placa 6EN3WK1
+Marca: Volkswagen
+Cor: Vermelho
+Proprietário: Kelis Wurzel
+Altura: 1,83 m
+--
+Placa JLP7G8U
+Marca: Subaru
+Cor: Verde
+Proprietário: Bo Titenis
+Altura: 1,83 m
+--
+Placa 1KHXR1A
+Marca: Ford
+Cor: Verde
+Proprietário: Aksana Baniotis
+Altura: 1,83 m
+--
+Placa SDGDUUL
+Marca: BMW
+Cor: Laranja
+Proprietário: Ranohon Montano
+Altura: 1,83 m
+--
+Placa N3DU4G1
+Marca: Cadillac
+Cor: Verde
+Proprietário: Simon Martinez
+Altura: 1,83 m
+--
+Placa WGRNE5S
+Marca: Nissan
+Cor: Dourada
+Proprietário: Kirsty Urtans
+Altura: 1,83 m
+--
+Placa 6424SBS
+Marca: Toyota
+Cor: Azul
+Proprietário: Vera Gerrand
+Altura: 1,83 m
+--
+Placa K4IRU9Q
+Marca: Volvo
+Cor: Preta
+Proprietário: Mylene Haywood
+Altura: 1,83 m
+--
+Placa 0KN6148
+Marca: Toyota
+Cor: Vermelho
+Proprietário: Jarred Selimau
+Altura: 1,83 m
+--
+Placa M2RY60M
+Marca: Ford
+Cor: Azul
+Proprietário: Omar Canitez
+Altura: 1,83 m
+--
+Placa 1A7YTCW
+Marca: Nissan
+Cor: Prata
+Proprietário: Matylda Muncan
+Altura: 1,83 m
+--
+Placa VAF84YO
+Marca: Volkswagen
+Cor: Vermelho
+Proprietário: Go Knioua
+Altura: 1,83 m
+--
+Placa 11GF4KJ
+Marca: Cadillac
+Cor: Petróleo
+Proprietário: Nada Francisca
+Altura: 1,83 m
+--
+Placa M5DL6SY
+Marca: Jaguar
+Cor: Verde
+Proprietário: Sergey Elgharably
+Altura: 1,83 m
+--
+Placa FU4S316
+Marca: Dodge
+Cor: Azul
+Proprietário: Jin Walton
+Altura: 1,83 m
+--
+Placa VEDBF2E
+Marca: Volkswagen
+Cor: Preta
+Proprietário: Yoann Gentry
+Altura: 1,83 m
+--
+Placa ZAW204S
+Marca: Audi
+Cor: Verde
+Proprietário: Leandro Jayasinghe
+Altura: 1,83 m
+--
+Placa FF7QNRH
+Marca: Cadillac
+Cor: Amarela
+Proprietário: Courtney Yankey
+Altura: 1,83 m
+--
+Placa 2A1YZMU
+Marca: BMW
+Cor: Preta
+Proprietário: Annika Kim
+Altura: 1,83 m
+--
+Placa 3E22RU8
+Marca: Volvo
+Cor: Petróleo
+Proprietário: Danijel Paderina
+Altura: 1,83 m
+--
+Placa P8ECLQ3
+Marca: Honda
+Cor: Vermelho
+Proprietário: Tina Hristova
+Altura: 1,83 m
+--
+Placa K9LUDIA
+Marca: Jeep
+Cor: Laranja
+Proprietário: Shiho Brens
+Altura: 1,83 m
+

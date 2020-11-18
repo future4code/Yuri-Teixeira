@@ -1,0 +1,6 @@
+Olá pessoal da Labenu!
+
+    Meu nome é Yuri Pinheiro, tenho 25 anos, nascido em Teresina-PI, residente em Alta Floresta-MT. Sou um pessoa bastante tranquila, exceto quando nao encontro o bug kkk. 
+    Tenho contato com computadores desde muito cedo e sempre gostei bastante da área, antes de começar cursar na Labenu eu era analista de sistema há 4 anos na empresa EcoCentauro. Lá nos dávamos suporte a um sistema de automação comercial, não tinhamos tanto contato com desenvolvimento de software, mas sempre tivemos bastante contato com banco de dados, desenvolvimento de relatorios, com configuração de sistemas operacionais e redes.  
+    Entrei na área de programação depois de começar a cursar análise e desenvolvimento de sistemas, comecei com C#, linguagem que amo de paixão, desenvolvi vários projetos e aprendi muito sobre lógica de programação, estrutura de dados, organização...
+    Enfim... É isso que tenho pra contar. Vlw

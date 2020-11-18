@@ -1,0 +1,211 @@
+  163  ls
+  164  cd Desktop
+  165  mkdir Labenu
+  166  cd Labenu
+  167  mkdir 01
+  168  cd 01
+  169  head /?
+  170  head
+  171  head ?
+  172  head -n
+  173  head --help
+  174  pwd
+  175  mkdir --help
+  176  cat --help
+  177  whoami
+  178  pwd
+  179  cd\\n
+  180  pwd
+  181  cd Desktop
+  182  cd Labenu/
+  183  mv 01 aula01
+  184  ls
+  185  cd aula01
+  186  rm --help
+  187  cd /home/yuri/Desktop/Labenu/aula01/assassinato-na-linha-de-comando/assassinato-na-linha-de-comando
+  188  cd ..
+  189  pwd
+  190  cd\\n
+  191  cd
+  192  pwd
+  193  cd /home/yuri/Desktop/Labenu/aula01/assassinato-na-linha-de-comando
+  194  cat inicio
+  195  cd misterio
+  196  ls
+  197  cat cena-do-crime
+  198  grep --help
+  199  grep PISTA cena-do-crime
+  200  cd .
+  201  pwd
+  202  ls
+  203  cd ..
+  204  cat inicio
+  205  cd misterio/
+  206  grep PISTA cena-do-crime
+  207  ls
+  208  /home/yuri/Desktop/Labenu/aula01/assassinato-na-linha-de-comando/misterio
+  209  ls
+  210  cat pessoas
+  211  clear
+  212  ls
+  213  cd entrevistas
+  214  ls
+  215  cd ..
+  216  ls
+  217  clear
+  218  ls
+  219  cd associacoes/
+  220  ls
+  221  cat AAA
+  222  clear
+  223  ls
+  224  cat Delta_SkyMiles
+  225  clear
+  226  cat Biblioteca_da_Cidade Biblioteca_da_Cidade
+  227  cd\\n
+  228  cd ..
+  229  ls
+  230  cd ..
+  231  cd..
+  232  ls
+  233  cd /home/yuri/Desktop/Labenu/aula01/assassinato-na-linha-de-comando
+  234  ls
+  235  cd misterio
+  236  ls
+  237  clear
+  238  ls
+  239  cd entrevistas
+  240  ls
+  241  cd .
+  242  cd..
+  243  cd ..
+  244  clear
+  245  ls
+  246  history
+  247  clear
+  248  cd associacoes
+  249  ls
+  250  cd ..
+  251  cd ruas
+  252  ls
+  253  cd ..
+  254  ls
+  255  cat pessoas
+  256  cd ..
+  257  ls
+  258  cd misterio
+  259  ls
+  260  grep Annabel pessoas
+  261  grep --help
+  262  ls
+  263  cd entrevistas
+  264  grep -r Annabel entrevista-
+  265  grep -r Annabel 
+  266  grep -r Annabel entrevista-
+  267  grep -r Annabel entrevista
+  268  grep -r Annabel entrevistas
+  269  grep -r -A Annabel 
+  270  grep -r Annabel -A
+  271  cd ..
+  272  grep -r Annabel entrevistas
+  273  grep -r loiro entrevistas
+  274  grep -r curt entrevistas
+  275  grep -r blond entrevistas
+  276  grep -r -A blond entrevistas
+  277  grep -r blond entrevistas
+  278  cd entrevistas
+  279  ls
+  280  cat entrevista-000296
+  281  ls
+  282  grep -r blond
+  283  grep -r blond ..
+  284  grep -r blond .
+  285  cd ..
+  286  grep -r blond ..
+  287  ls
+  288  history
+  289  clear
+  290  grep -r 1,83
+  291  grep -r 1,83 =A
+  292  grep -r 1,83 -A
+  293  grep --help
+  294  grep -R 1,83
+  295  ls
+  296  cat automoveis
+  297  grep -r 1,83 automoveis
+  298  grep -r -A 5 1,83 automoveis
+  299  grep -r -A 10 1,83 automoveis
+  300  grep --help
+  301  grep -r -B 10 1,83 automoveis
+  302  grep -r -B 4 1,83 automoveis
+  303  clear
+  304  grep -r -B 4 1,83 automoveis
+  305  clear
+  306  touch suspeitosCom183m.txt
+  307  clear
+  308  ls
+  309  suspeitosCom183m.txt
+  310  open_command suspeitosCom183m.txt
+  311  ls
+  312  clear
+  313  cls
+  314  ls
+  315  clear
+  316  ls
+  317  open_command suspeitosCom183m.txt
+  318  grep -r coffe
+  319  grep -r Coffe ..
+  320  grep -r Coffe .
+  321  grep -r offe .
+  322  grep -r shop .
+  323  grep -r assas .
+  324  grep -r assasi .
+  325  grep -r assassi .
+  326  clear
+  327  ls
+  328  cat cena-do-crime
+  329  clear
+  330  grep -r Annabel ..
+  331  grep -r -A 100 Annabel ..
+  332  grep -r -A 10 Annabel ..
+  333  grep -r -B 10 Annabel ..
+  334  grep -r -A 10 Annabel ..
+  335  clear
+  336  grep -r -A 10 Annabel ..
+  337  grep -r -A 10 loiro ..
+  338  clear
+  339  grep -r -A 10 loiro ..
+  340  ls
+  341  cat cena-do-crime
+  342  clear
+  343  cat cena-do-crime
+  344  clear
+  345  --help
+  346  help
+  347* clear
+  348* grep -r -A 10 -B 10 PISTA ..
+  349* grep -r PISTA ..
+  350* clear
+  351* grep -r PISTA ..
+  352  clear
+  353  ls
+  354  grep -r cafeteria ..
+  355  grep -r -A 10 -B 10 cafeteria ..
+  356  cat entrevistas/entrevista-47246024
+  357  clear
+  358  grep -r cafeteria
+  359  cat suspeitosCom183m.txt
+  360  grep -r carro ..
+  361  grep -r L337
+  362  grep -r -A 6 L337
+  363* ls
+  364* touch suspeitosHondaAzul.txt
+  365* open_command suspeitosHondaAzul.txt
+  366  clear
+  367  grep -r Erika Owens
+  368  grep -r Erika Owens ..
+  369  grep -r "Erika Owens" ..
+  370  grep -r "Joe Germuska" ..
+  371  grep -r "Jeremy Bowers" ..
+  372  grep -r "Jacqui Maher" ..
+
