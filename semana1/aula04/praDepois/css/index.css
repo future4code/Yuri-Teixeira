@@ -1,0 +1,25 @@
+.mainTitle {
+    text-align: center;
+    font-family: monospace;
+    background-color: lightgray;
+    border-color: lightgray;
+    padding: 20px;
+    border: 0px;
+}
+
+.menus > a {
+    display: inline-block;
+    font-size: 40px;
+}
+
+.mainBotton{
+    text-align: left;
+    position: absolute;
+    bottom: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darkgray;
+    font-size: 200%;
+    width: 95%;
+    padding: 10px;
+
+}
