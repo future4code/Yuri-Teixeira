@@ -24,12 +24,14 @@ input {
     width: 500px;
 }
 
+
+
 button:focus {
     color: white;
 }
 
 img {
-    width: 100px;
+    width: 50px;
 }
 
 div>p:first-child {
