@@ -64,6 +64,11 @@ div img {
 .welcome{
     vertical-align: middle;
 }
+.somos{
+    width: 180px;
+    align-items: center;
+    margin: auto;
+}
 
 
 /** 
