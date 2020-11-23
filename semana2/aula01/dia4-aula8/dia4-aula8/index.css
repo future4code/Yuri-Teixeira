@@ -29,7 +29,6 @@ input {
 }
 
 
-
 button:hover {
     color: white;
     background-color: #fe7e02;
@@ -41,6 +40,18 @@ img {
 
 div>p:first-child {
     display: inline;
+}
+
+.btnPesquisar{
+    background-image: url(./images/icons8-pesquisar-64.png) ;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.btnPesquisar:hover{
+    background-color: aqua;
 }
 
 div img {
@@ -152,7 +163,6 @@ td button {
     border-radius: 5px;
     font-size: 30px;
     color: black;
-    text-decoration: none;
 }
 
 #back-button:hover {
