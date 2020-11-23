@@ -4,9 +4,16 @@
   *
   **/
 
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf');
+    align-items: center;
+  }
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 h2 {
@@ -120,6 +127,7 @@ div:last-child {
 
 table {
     width: 60%;
+    margin: auto;
 }
 
 td button {
