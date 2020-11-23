@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf');
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Medium.ttf');
+  align-items: center;
+}
+
+html, body {
+  background-image: url(/images/abstract1.jpg);
+  background-size: 35%;
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  color: black;
+  background-color: white;
+  padding-bottom: 200px;
+  padding-top: 50px;
+  width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+
+.toolTip {
+  background-color: #0f4c75;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  height: 60px;
+  width: 1400px;
+  display: block;
+  margin: auto;
+}
+
+.attach {
+  color: white;
+  /* margin-top: 50px; */
+  font-size: 24px;
+  margin: 16px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Roboto';
+}
+
+.attach:hover {
+  color: #3282b8;
+}
+
+.titleMain {
+  font-size: 85px;
+  display: block;
+  text-align: center;
+  color: #0f4c75;
+  margin-top: 20px;
+  
+}
+
+.titleDescription {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color: #0f4c75;
+  font-style: bold;
+  font-weight: bold;
+  margin-left: 80px;
+  margin-top: 100px;
+  margin-right: 80px;
+  text-align: center;
+  display: block;
+}
+
+.description {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 23px;
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-right: 80px;
+  text-align: justify;
+}
+
+.desc {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color: #0f4c75;
+  font-style: bold;
+  font-weight: bold;
+  margin-left: 80px;
+  margin-top: 100px;
+  margin-right: 80px;
+  text-align: left;
+  display: block;
+}
+
+.projectPictures{
+  margin-top: 30px;
+  width: 900px;
+}

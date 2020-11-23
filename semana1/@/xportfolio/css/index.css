@@ -1,0 +1,38 @@
+.main {
+  background-image: url(/images/abstract1.jpg);
+  background-size: 40%;
+}
+
+.container {
+  /*cores*/
+  color: black;
+  background-color: white;
+  /*tamanhos*/
+  height: 100%;
+  width: 65%;
+  left: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
+  /*alinhamentos*/
+  align-content: center;
+  overflow: visible;
+  position: absolute;
+  top: 0px;
+  display: inline;
+}
+
+.profilePicture {
+  border-radius: 100%;
+  block-size: 40%;
+  margin: 3%;
+  display: inline;
+}
+
+.title {
+  font-size: 600%;
+  display: inline;
+  float: right;
+  text-align: center;
+  margin-right: 20%;
+  margin-top:  15%;
+}

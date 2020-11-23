@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf');
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Medium.ttf');
+  align-items: center;
+}
+
+html, body {
+  background-image: url(/images/abstract1.jpg);
+  background-size: 35%;
+  margin: 0;
+}
+
+.container {
+  color: black;
+  background-color: white;
+  padding-bottom: 200px;
+  padding-top: 50px;
+  width: 1400px;
+  display: block;
+  margin: auto;
+}
+
+.toolTip {
+  background-color: #0f4c75;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  height: 60px;
+  width: 1400px;
+  display: block;
+  margin: auto;
+}
+
+.attach {
+  color: white;
+  /* margin-top: 50px; */
+  font-size: 24px;
+  margin: 16px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Roboto';
+}
+
+.attach:hover {
+  color: #3282b8;
+}
+
+/* .containerPicture{
+  display: inline;
+  align-items: left;
+  
+} */
+
+/* .profilePicture {
+  border-radius: 500px;
+  width: 300px;
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 70px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #0f4c75;
+} */
+
+.nameProfile {
+  font-size: 85px;
+  display: block;
+  /* position: relative; */
+  text-align: center;
+  color: #0f4c75;
+  margin-top: 20px;
+}
+
+.titleDescription {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color: #0f4c75;
+  font-style: bold;
+  font-weight: bold;
+  margin-left: 80px;
+  margin-top: 100px;
+  margin-right: 80px;
+  text-align: justify;
+}
+
+.description {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 23px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-right: 80px;
+  text-align: justify;
+}
+
+.skills{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 23px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-right: 80px;
+  text-align: justify;
+}
+
+.descSkill{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 23px;
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-right: 80px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
