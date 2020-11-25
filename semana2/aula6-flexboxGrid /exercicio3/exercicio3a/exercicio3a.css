@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.pageWeb {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.tooltip {
+    display: flex;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    width: 400px;
+    background-color: lightgreen;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu {
+    display: flex;
+    background-color: yellow;
+    height: 60px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content1 {
+    display: flex;
+    background-color: hotpink;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.content2 {
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 1000px;
+}
+
+.image {
+    display: flex;
+    background-color: lightcoral;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50%;
+}
+
+.extra {
+    display: flex;
+    background-color: lightgreen;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50%;
+}
+
+.footer {
+    display: flex;
+    background-color: indigo;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
