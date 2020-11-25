@@ -1,0 +1,152 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#first-block {
+    display: block;
+    background-color: red;
+    height: 5vh;
+}
+
+.primeiro {
+    display: flex;
+    justify-content: space-between;
+    height: 30em;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.blue-block {
+    background-color: blue;
+    width: 30%;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.yellow-block {
+    background-color: yellow;
+    width: 30%;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.green-block {
+    background-color: green;
+    width: 30%;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.segundo {
+    display: flex;
+    justify-content: space-between;
+    height: 30em;
+    flex-wrap: wrap;
+    margin: 1vh;
+}
+
+.black-block {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 20em;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+}
+
+.terceiro {
+    display: flex;
+    justify-content: space-between;
+    height: 30em;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.white-block {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    height: 7em;
+    width: 22em;
+    margin: 27px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media screen and (min-device-width: 0px) and (max-device-width: 600px) {
+    .blue-block {
+        width: 95vw;
+        height: 20vh;
+    }
+    .yellow-block {
+        width: 95vw;
+        height: 20vh;
+    }
+    .green-block {
+        width: 95vw;
+        height: 20vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .segundo {
+        margin-top: 50em;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .black-block{
+        width: 95vw;
+    }
+
+    .terceiro {
+        margin-top: 20vh;
+        width: 95vw;
+    }
+    .white-block{
+        width: 95vw;
+    }
+}
+
+@media screen and (min-device-width: 601px) and (max-device-width: 1199px) {
+    /* #main-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    } */
+    .blue-block {
+        width: 35vw;
+        height: 20vh;
+    }
+    .yellow-block {
+        width: 35vw;
+        height: 20vh;
+    }
+    .green-block {
+        width: 95vw;
+        height: 20vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .segundo {
+        margin-top: 25em;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .terceiro {
+        margin-top: 2vh;
+        width: 49vw;
+    }
+}
+
