@@ -1,0 +1,123 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#first-block {
+    background-color: red;
+    width: 99.9vw;
+    height: 3em;
+    border: 1px solid black;
+}
+
+.primeiro {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: auto;
+}
+
+.blue-block {
+    background-color: blue;
+    width: 31vw;
+    height: 19vh;
+    margin: 1vh 1vw 1vh 1vw;
+    border: 1px solid black;
+    min-width: 280px;
+    flex-grow: 1;
+}
+
+.yellow-block {
+    background-color: yellow;
+    width: 31vw;
+    height: 19vh;
+    margin: 1vh 1vw 1vh 1vw;
+    border: 1px solid black;
+    min-width: 280px;
+    flex-grow: 1;
+}
+
+.green-block {
+    background-color: green;
+    width: 31vw;
+    height: 19vh;
+    margin: 1vh 1vw 1vh 1vw;
+    border: 1px solid black;
+    min-width: 280px;
+    flex-grow: 1;
+}
+
+.segundo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+}
+
+.segundo>div {
+    height: 30vh;
+    border: 1px solid black;
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.black-block {
+    width: 46vw;
+    background-color: black;
+    color: white;
+    order: 0;
+    flex-grow: 1;
+    
+}
+
+.terceiro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+}
+
+.white-block {
+    border: 1px solid black;
+    width: 31vw;
+    margin: 1vh 1vw 1vh 1vw;
+    height: 15vh;
+    min-width: 280px;
+    background-color: white;
+    flex-grow: 1;
+
+}
+
+@media screen and (min-device-width: 50px) and (max-device-width: 599px) {
+
+    .black-block{
+        flex-grow: 1;
+        width: 95vw;
+    }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px) {
+    .green-block {
+        width: 95vh;
+        flex-grow: 1;
+    }
+    .blue-block {
+        min-width: 150px;
+        width: 47vw;
+        flex-grow: 1;
+    }
+    .yellow-block {
+        min-width: 150px;
+        width: 47vw;
+        flex-grow: 1;
+    }
+    .white-block {
+        flex-grow: 1;
+    }
+    .black-block{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-device-width: 1200px) {}
