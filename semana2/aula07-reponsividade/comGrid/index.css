@@ -1,0 +1,44 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.first{
+    display: grid;
+    grid-template-rows: 5vh;
+}
+
+#first-block {
+    background-color: red;
+    grid-area: auto;
+}
+
+.second{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr,3);
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.blue-block {
+    background-color: blue;
+}
+
+.yellow-block {
+    background-color: yellow;
+}
+
+.green-block {
+    background-color: green;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+}
+
+.white-block {
+    background-color: white;
+}
