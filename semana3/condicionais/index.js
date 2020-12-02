@@ -217,58 +217,58 @@ if (tipoJogo === 'Doméstico' && etapaJogo === 'Semifinais') {
 } else if (tipoJogo === 'Internacional' && etapaJogo === 'Semifinais') {
   switch (categoria) {
     case 1:
-      valorTotal = (sf1 * qtdIngressos) * dolar;
-      valorIngresso = sf1 * dolar;
+      valorTotal = (sf1 * qtdIngressos) / dolar;
+      valorIngresso = sf1 / dolar;
       break;
     case 2:
-      valorTotal = (sf2 * qtdIngressos) * dolar;
-      valorIngresso = sf2 * dolar;
+      valorTotal = (sf2 * qtdIngressos) / dolar;
+      valorIngresso = sf2 / dolar;
       break;
     case 3:
-      valorTotal = (sf3 * qtdIngressos) * dolar;
-      valorIngresso = sf3 * dolar;
+      valorTotal = (sf3 * qtdIngressos) / dolar;
+      valorIngresso = sf3 / dolar;
       break;
     case 4:
-      valorTotal = (sf4 * qtdIngressos) * dolar;
-      valorIngresso = sf4 * dolar;
+      valorTotal = (sf4 * qtdIngressos) / dolar;
+      valorIngresso = sf4 / dolar;
       break;
   }
 } else if (tipoJogo === 'Internacional' && etapaJogo === 'Decisão do 3° lugar') {
   switch (categoria) {
     case 1:
-      valorTotal = (dt1 * qtdIngressos) * dolar;
-      valorIngresso = dt1 * dolar;
+      valorTotal = (dt1 * qtdIngressos) / dolar;
+      valorIngresso = dt1 / dolar;
       break;
     case 2:
-      valorTotal = (dt2 * qtdIngressos) * dolar;
-      valorIngresso = dt2 * dolar;
+      valorTotal = (dt2 * qtdIngressos) / dolar;
+      valorIngresso = dt2 / dolar;
       break;
     case 3:
-      valorTotal = (dt3 * qtdIngressos) * dolar;
-      valorIngresso = dt3 * dolar;
+      valorTotal = (dt3 * qtdIngressos) / dolar;
+      valorIngresso = dt3 / dolar;
       break;
     case 4:
-      valorTotal = (dt4 * qtdIngressos) * dolar;
-      valorIngresso = dt4 * dolar;
+      valorTotal = (dt4 * qtdIngressos) / dolar;
+      valorIngresso = dt4 / dolar;
       break;
   }
 } else if (tipoJogo === 'Internacional' && etapaJogo === 'Final') {
   switch (categoria) {
     case 1:
-      valorTotal = (fi1 * qtdIngressos) * dolar;
-      valorIngresso = fi1 * dolar;
+      valorTotal = (fi1 * qtdIngressos) / dolar;
+      valorIngresso = fi1 / dolar;
       break;
     case 2:
-      valorTotal = (fi2 * qtdIngressos) * dolar;
-      valorIngresso = fi2 * dolar;
+      valorTotal = (fi2 * qtdIngressos) / dolar;
+      valorIngresso = fi2 / dolar;
       break;
     case 3:
-      valorTotal = (fi3 * qtdIngressos) * dolar;
-      valorIngresso = fi3 * dolar;
+      valorTotal = (fi3 * qtdIngressos) / dolar;
+      valorIngresso = fi3 / dolar;
       break;
     case 4:
-      valorTotal = (fi4 * qtdIngressos) * dolar;
-      valorIngresso = fi4 * dolar;
+      valorTotal = (fi4 * qtdIngressos) / dolar;
+      valorIngresso = fi4 / dolar;
       break;
   }
 }
