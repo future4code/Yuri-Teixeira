@@ -93,7 +93,7 @@
 /* DESAFIO 3 */
 console.log(`Vamos jogar!`);
 console.log(`Escolhemos um número de 1 a 10 para que vc tente acertar. Vamos lá`);
-let numeroEscolhido = Math.floor(Math.random() * 10);
+let numeroEscolhido = Math.floor(Math.random() * 100);
 let chutes = 0;
 let chute = 0;
 let acerto = false;
@@ -109,5 +109,6 @@ while (acerto === false) {
         console.log(`Parabens, vc acertou o número.\nQtde de chutes: ${chutes}`)
         acerto = true;
     }
+
     chutes++;
 }

@@ -284,3 +284,4 @@ console.log(
  Valor do ingresso: ${moeda}${valorIngresso}\n
  Valor total: ${moeda}${valorTotal}`
 );
+
