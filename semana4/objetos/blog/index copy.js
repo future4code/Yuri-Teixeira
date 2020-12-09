@@ -20,7 +20,7 @@ function newPost() {
   feed.innerHTML += `<div class="post"><h2 class="title">${post.titulo}
   </h2><h3 class="autor">${post.autor}</h3><p class="conteudo">${post.conteudo}
   </p><img src=${post.img}></div>`;
-  window.open(`./postPage.html`)
+  window.location.href =`./postPage.html`;
 }
 
 function loadPost() {
