@@ -1,0 +1,40 @@
+.post-container {
+    border: 1px solid gray;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.post-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.photoName{
+    display: flex;
+    align-items: center;
+}
+
+.post-footer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.post-footer>img{
+    block-size: 19px;
+}
+
+.user-photo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.post-photo {
+    width: 100%;
+}

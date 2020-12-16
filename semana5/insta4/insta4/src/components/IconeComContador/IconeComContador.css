@@ -1,0 +1,8 @@
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    margin-right: 5px;
+}
