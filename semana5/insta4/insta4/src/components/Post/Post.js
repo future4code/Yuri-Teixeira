@@ -17,7 +17,7 @@ class Post extends React.Component {
     numeroCurtidas: 0,
     comentando: false,
     numeroComentarios: 0,
-    sharing: false
+    sharing: false,
   }
 
   onClickCurtida = () => {
@@ -44,8 +44,8 @@ class Post extends React.Component {
   }
 
   onClickShare = () => {
-    this.setState({ 
-      sharing: !this.state.sharing 
+    this.setState({
+      sharing: !this.state.sharing
     })
   }
 
