@@ -27,7 +27,10 @@ class App extends React.Component {
       nomeUsuario: 'Maranhão',
       fotoUsuario: 'https://picsum.photos/501/502',
       fotoPost: 'https://picsum.photos/200/103'
-    }]
+    }],
+    nomeUsuario: '',
+    fotoUsuario: '',
+    fotoPost: ''
   }
 
   render() {
@@ -36,39 +39,44 @@ class App extends React.Component {
         <Post
           nomeUsuario={p.nomeUsuario}
           fotoUsuario={p.fotoUsuario}
-          fotoPost={p.fotoPost}
+          fotoPost={p.fotoPost} 
         />
       )
     })
 
-    const newPost = (nome, fotoPerfil, fotoPost) => {
+    const newPost = () => {
       let novoPost = {
-        nomeUsuario: nome,
-        fotoUsuario: fotoPerfil,
-        fotoPost: fotoPost
+        nomeUsuario: this.state.nomeUsuario,
+        fotoUsuario: this.state.fotoUsuario,
+        fotoPost: this.state.fotoPost
       }
 
-      let novoArray = [novoPost];
-      this.setState({ posts: [...this.state.posts, novoArray] })
+      this.setState({ posts: [novoPost, ...this.state.posts] })
+    }
+
+    const onChangeNome = (e) => {
+      this.setState({ nomeUsuario: e.target.value })
+    }
+    const onChangeFotoPerfil = (e) => {
+      this.setState({ fotoUsuario: e.target.value })
+    }
+    const onChangeFotoPost = (e) => {
+      this.setState({ fotoPost: e.target.value })
     }
 
     return (
       <div className={'app-container'}>
         <DivFormulario>
           <label htmlFor="nome">Nome</label>
-          <input type="text" id='nome' value='aaa'/>
+          <input type="text" onChange={onChangeNome} />
 
           <label htmlFor="fotoPerfil">fotoPerfil</label>
-          <input type="text" id='fotoPerfil' value='https://picsum.photos/50/50'/>
+          <input type="text" onChange={onChangeFotoPerfil} />
 
           <label htmlFor="fotoPost">fotoPost</label>
-          <input type="text" id='fotoPost' value='https://picsum.photos/50/50'/>
+          <input type="text" onChange={onChangeFotoPost} />
 
-          <button onClick={() => newPost(
-          'aaa', 
-          'https://picsum.photos/50/50',
-          'https://picsum.photos/50/50')}
-          >Postar!</button>
+          <button onClick={() => newPost()}>Postar!</button>
         </DivFormulario>
         {feed}
       </div>

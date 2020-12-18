@@ -15,7 +15,7 @@ class Post extends React.Component {
   state = {
     curtido: false,
     numeroCurtidas: 0,
-    comentando: false,
+    comentando: true,
     numeroComentarios: 0,
     sharing: false,
   }
@@ -51,7 +51,7 @@ class Post extends React.Component {
 
   aoEnviarComentario = () => {
     this.setState({
-      comentando: false,
+      // comentando: false,
       numeroComentarios: this.state.numeroComentarios + 1
     })
   }
