@@ -22,7 +22,7 @@ class App extends React.Component {
   state = {
     tarefas: [
       {
-        id: Date.now(),
+        id: 1,
         texto: 'alguma coisa',
         completa: false
       },
@@ -53,11 +53,19 @@ class App extends React.Component {
   }
 
   selectTarefa = (id) => {
-
+    const tarefaAlterada = this.state.tarefas.map(tarefa => {
+      if (tarefa.id === id) {
+        const novaTarefa = { ...tarefa, completa: !tarefa.completa }
+        return novaTarefa;
+      } else {
+        return tarefa;
+      }
+    })
+    this.setState({ tarefas: tarefaAlterada })
   }
 
   onChangeFilter = (event) => {
-
+    this.setState({ filtro: event.target.value })
   }
 
   render() {
