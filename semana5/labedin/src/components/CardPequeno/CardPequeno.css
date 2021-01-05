@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+._CardPequeno {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 515px;
+}
+
+._CardPequeno>img {
+  block-size: 50px;
+  margin-right: 15px;
+}
+
+._CardPequeno>p{
+  margin-left: 15px;
+}
