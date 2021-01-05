@@ -1,0 +1,7 @@
+.redes {
+  display: flex;
+  block-size: 20px;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px 5px;
+}
