@@ -9,30 +9,14 @@ const ComentarioDiv = styled.div`
 
 export class SecaoComentario extends Component {
 	state = {
-		comentarios: ['a', 'b'],
 		novoComentario: ''
-	}
-
-	aoEnviar = () => {
-		this.setState({ comentarios: [...this.state.comentarios, this.state.novoComentario], novoComentario: '' });
-		console.log(this.state.comentarios);
 	}
 
 	onChangeComentario = (e) => {
 		this.setState({ novoComentario: e.target.value })
 	}
 
-	
-
 	render() {
-		const comentarios = () => {
-			this.state.comentarios.map(p => {
-				return (
-					<ComentarioDiv>{p}</ComentarioDiv>
-				)
-			})
-		}
-
 		return (
 			<div className={'comment-container'}>
 				<input
@@ -41,8 +25,8 @@ export class SecaoComentario extends Component {
 					value={this.state.novoComentario}
 					onChange={this.onChangeComentario}
 				/>
-				<button onClick={this.aoEnviar}>Enviar</button>
-				{comentarios}
+				<button onClick={this.props.aoEnviar}>Enviar</button>
+				
 			</div>
 		)
 	}
