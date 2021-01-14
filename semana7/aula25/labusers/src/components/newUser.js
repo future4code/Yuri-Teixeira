@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-export default class CriarUsuario extends React.Component {
+export default class NewUser extends React.Component {
   state = {
     name: 'yuri',
     email: 'yuri@gmail.com'
@@ -38,6 +38,7 @@ export default class CriarUsuario extends React.Component {
   render() {
     return (
       <div>
+        <h1>Criar usuário</h1>
         <input type="text" placeholder='Nome' onChange={this.nomeChange} value={this.state.name} />
         <input type="text" placeholder='Email' onChange={this.emailChange} value={this.state.email} />
         <button onClick={this.criarUsuario}>Criar usuário</button>
