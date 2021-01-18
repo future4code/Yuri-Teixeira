@@ -15,19 +15,41 @@ height: 100vh -50px;
 
 export default class Main extends React.Component {
   state = {
-    page: 'Main'
+    page: 'NewPlaylist'
   }
 
   PageRenderized = () => {
-    return (
-      <Playlist />
-    );
+    switch (this.state.page) {
+      case 'Main':
+        return <div>Esta é a main</div>
+      case 'NewPlaylist':
+        return <NewPlaylist />
+      case 'Playlist':
+        return <Playlist />
+    }
   }
+
+  menuMainPage = () => {
+    this.setState({page: 'Main'})
+  }
+
+  menuNewPlaylist = () => {
+    this.setState({page: 'NewPlaylist'})
+  }
+
+  menuPlaylist = () => {
+    this.setState({page: 'Playlist'})
+  }
+
 
   render() {
     return (
       <DivMain>
-        <Header />
+        <Header 
+        menuMainPage={this.menuMainPage}
+        menuNewPlaylist={this.menuNewPlaylist}
+        menuPlaylist={this.menuPlaylist}/>
+        
         <DivBody content={this.PageRenderized()} />
       </DivMain>
     )

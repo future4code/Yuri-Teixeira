@@ -17,11 +17,13 @@ const UlMenu = styled.ul`
 display: flex;
 list-style: none;
 `
-const MenuItem = styled.a`
+const MenuItem = styled.button`
 margin: 5px;
 padding: 5px;
-text-decoration: none;
+font-size: 1.3rem;
 color: #eeeeee;
+background-color:#303841;
+border-style: none;
 `
 
 
@@ -33,10 +35,10 @@ export default class Header extends React.Component {
   render() {
     return (
       <DivHeader>
-        <MenuItem href="">Página inicial</MenuItem>
+        <MenuItem onClick={this.props.menuMainPage}>Página inicial</MenuItem>
         <UlMenu>
-          <li><MenuItem href="">Criar playlist</MenuItem></li>
-          <li><MenuItem href="">Todas playlists</MenuItem></li>
+          <li><MenuItem onClick={this.props.menuNewPlaylist}>Criar playlist</MenuItem></li>
+          <li><MenuItem onClick={this.props.menuPlaylist}>Todas playlists</MenuItem></li>
         </UlMenu>
       </DivHeader>
     )
