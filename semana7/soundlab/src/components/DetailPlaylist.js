@@ -10,18 +10,17 @@ flex-direction: column;
 
 export default class DetailPlaylist extends React.Component {
   state = {
-    Artist: '',
-    Track: '',
-    Url: ''
+    artist: '',
+    track: '',
+    url: ''
   }
 
   addTrackToPlaylist = (id) => {
     const body = {
-      name: this.state.Track,
-      artist: this.state.Artist,
-      url: this.state.Url
+      name: this.state.track,
+      artist: this.state.artist,
+      url: this.state.url
     }
-    console.log(id,body);
     const request = axios.post(getTracksUrl(id), body, headerAPI);
 
     request.then((res) => {
@@ -58,6 +57,7 @@ export default class DetailPlaylist extends React.Component {
             <div>
               <p>{p.artist} - {p.name}</p>
               <audio src={p.url} controls="controls" />
+              <button onClick={this.props.deleteTrack}>X</button>
             </div>
           )
         })}

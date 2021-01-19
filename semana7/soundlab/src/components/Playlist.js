@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { URL, headerAPI, deletePlaylistUrl, getTracksUrl } from './configApi'
+import { URL, headerAPI, deletePlaylistUrl, getTracksUrl, deleteTracksUrl } from './configApi'
 import DetailPlaylist from './DetailPlaylist'
 
 export default class Playlist extends React.Component {
@@ -10,7 +10,7 @@ export default class Playlist extends React.Component {
     tracksPlaylist: [],
     viewDetailPlaylist: false
   }
-  
+
   componentDidMount = () => {
     this.getPlaylists();
   }
@@ -48,8 +48,18 @@ export default class Playlist extends React.Component {
     })
   }
 
+  deleteTrack = (idTrack) => {
+    const request = axios.delete(deleteTracksUrl(infoPlaylist.id, idTrack), headerAPI);
+
+    request.then((res) => {
+      console.log(res.message);
+    }).catch((err) => {
+      console.log(err.message);
+    })
+  }
+
   backPlaylists = () => {
-    this.setState({viewDetailPlaylist: false})
+    this.setState({ viewDetailPlaylist: false })
   }
 
   render() {
@@ -67,9 +77,10 @@ export default class Playlist extends React.Component {
       return (
         <DetailPlaylist
           namePlaylist={this.state.infoPlaylist.name}
-          tracks={this.state.tracksPlaylist} 
+          tracks={this.state.tracksPlaylist}
           backPlaylists={this.backPlaylists}
-          idPlaylist={this.state.infoPlaylist.id}/>
+          idPlaylist={this.state.infoPlaylist.id}
+          deleteTrack={this.deleteTrack} />
       )
     }
 
