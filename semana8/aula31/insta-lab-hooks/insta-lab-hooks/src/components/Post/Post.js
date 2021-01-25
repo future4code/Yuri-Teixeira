@@ -18,6 +18,8 @@ import iconeComentario from "../../img/comment_icon.svg";
 function Post(props) {
   let [curtido, setCurtido] = useState(false);
   let [comentando, setComentando] = useState(false);
+  let [numeroCurtidas, setNumeroCurtidas] = useState(0);
+  let [numeroComentarios, setNumeroComentarios] = useState(0);
 
   const onClickCurtida = () => {
     setCurtido((curtido = !curtido));
@@ -27,13 +29,16 @@ function Post(props) {
     setComentando((comentando = !comentando));
   };
 
-  const comentarios = () => {
-    if (comentando) {
-      return <SecaoComentario />;
-    }
+  const enviarComentario = (comentario) => {
+    setNumeroComentarios(numeroComentarios + 1);
+    setComentando((comentando = false));
   };
 
-  const enviarComentario = (comentario) => {};
+  const comentarios = () => {
+    if (comentando) {
+      return <SecaoComentario enviarComentario={() => enviarComentario()} />;
+    }
+  };
 
   return (
     <PostContainer>
@@ -48,13 +53,13 @@ function Post(props) {
         <IconeComContador
           icone={curtido ? iconeCoracaoPreto : iconeCoracaoBranco}
           onClickIcone={onClickCurtida}
-          // valorContador={numeroCurtidas}
+          valorContador={numeroCurtidas}
         />
 
         <IconeComContador
           icone={iconeComentario}
           onClickIcone={onClickComentario}
-          // valorContador={numeroComentarios}
+          valorContador={numeroComentarios}
         />
       </PostFooter>
       {comentarios()}
