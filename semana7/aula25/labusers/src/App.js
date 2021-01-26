@@ -1,14 +1,18 @@
 import './App.css';
-import CriarUsuario from './components/criarUsuario'
-import ListaUsuarios from './components/listaUsuario'
+import React from 'react'
+import Main from './components/main'
 
-function App() {
-  return (
-    <div className="App">
-      <CriarUsuario />
-      <ListaUsuarios />
-    </div>
-  );
+
+export default class App extends React.Component {
+  state = {
+    mainPage: false
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Main />
+      </div>
+    );
+  }
 }
-
-export default App;
