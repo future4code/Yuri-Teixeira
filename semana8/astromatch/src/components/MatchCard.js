@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import axios from "axios";
+import { getProfileUnread as getNewprofile } from "../Connection/connection";
 
 import ButtonMatches from "./MaterialUI/ButtonMatches";
 import ImgMediaCard from "./MaterialUI/ImageCard";
@@ -35,13 +37,33 @@ const DivButtonLike = styled.div`
 `;
 
 export default function MatchCard() {
+  let [profile, setProfile] = useState([]);
+
+  useEffect(() => {
+    const request = axios.get(getNewprofile);
+
+    request
+      .then((res) => {
+        setProfile((profile = res.data.profile));
+        console.log(profile);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <DivMain>
       <BarHeader>
         <p>Astromatch</p>
         <ButtonMatches />
       </BarHeader>
-      <ImgMediaCard />
+      <ImgMediaCard
+        image={profile.photo}
+        name={profile.name}
+        age={profile.age}
+        bio={profile.bio}
+      />
       <DivButtonLike>
         <ButtonUnlike />
         <ButtonLike />

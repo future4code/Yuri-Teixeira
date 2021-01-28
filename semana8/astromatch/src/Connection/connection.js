@@ -1,0 +1,1 @@
+export const getProfileUnread = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/yuri/person";
