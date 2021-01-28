@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
-import { getProfileUnread as getNewprofile } from "../Connection/connection";
+import { apiUrl, choosePersonUrl } from "../Connection/connection";
 
 import ButtonMatches from "./MaterialUI/ButtonMatches";
 import ImgMediaCard from "./MaterialUI/ImageCard";
@@ -39,17 +39,40 @@ const DivButtonLike = styled.div`
 export default function MatchCard() {
   let [profile, setProfile] = useState([]);
 
-  useEffect(() => {
-    const request = axios.get(getNewprofile);
+  const getProfile = () => {
+    const request = axios.get(apiUrl);
 
     request
       .then((res) => {
         setProfile((profile = res.data.profile));
-        console.log(profile);
       })
       .catch((err) => {
         console.log(err);
       });
+  };
+
+  const choosePerson = () => {
+    const body = {
+      id: profile.id,
+      choice: true,
+    };
+
+    const request = axios.post(choosePersonUrl, body);
+    request
+      .then((res) => {
+        if (res.data.isMatch) {
+          alert("Essa pessoa também deu match");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    getProfile();
+  };
+
+  useEffect(() => {
+    getProfile();
   }, []);
 
   return (
@@ -66,7 +89,7 @@ export default function MatchCard() {
       />
       <DivButtonLike>
         <ButtonUnlike />
-        <ButtonLike />
+        <ButtonLike like={() => choosePerson()} />
       </DivButtonLike>
     </DivMain>
   );

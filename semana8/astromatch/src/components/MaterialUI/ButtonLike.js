@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonLike() {
+export default function ButtonLike(props) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Fab color="primary" aria-label="match" size="large">
-        <FavoriteIcon />
+        <FavoriteIcon onClick={props.like}/>
       </Fab>
     </div>
   );
