@@ -3,8 +3,12 @@ import styled from "styled-components";
 
 import ButtonMatches from "./MaterialUI/ButtonMatches";
 import ImgMediaCard from "./MaterialUI/ImageCard";
+import ButtonLike from "./MaterialUI/ButtonLike";
+import ButtonUnlike from "./MaterialUI/ButtonUnlike";
 
 const DivMain = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 1000px;
   height: 950px;
   margin: 20px;
@@ -23,6 +27,13 @@ const BarHeader = styled.div`
   font-weight: 600;
 `;
 
+const DivButtonLike = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`;
+
 export default function MatchCard() {
   return (
     <DivMain>
@@ -31,6 +42,10 @@ export default function MatchCard() {
         <ButtonMatches />
       </BarHeader>
       <ImgMediaCard />
+      <DivButtonLike>
+        <ButtonUnlike />
+        <ButtonLike />
+      </DivButtonLike>
     </DivMain>
   );
 }

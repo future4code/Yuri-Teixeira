@@ -36,14 +36,6 @@ export default function ImgMediaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* <CardActions>
-        <Button size="large" color="primary">
-          Share
-        </Button>
-        <Button size="large" color="primary">
-          Learn More
-        </Button>
-      </CardActions> */}
     </Card>
   );
 }
