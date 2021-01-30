@@ -14,12 +14,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonLike() {
+export default function ButtonLike(props) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Fab color="primary" aria-label="match" size="large">
+      <Fab color="primary" aria-label="match" size="large" onClick={props.unlike}>
         <CancelIcon />
       </Fab>
     </div>

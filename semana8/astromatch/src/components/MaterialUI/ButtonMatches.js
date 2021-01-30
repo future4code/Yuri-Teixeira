@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 
 const DivContent = styled.div`
   display: flex;
-  background-color: #c94d81;
+  background-color: #b71968;
   height: stretch;
   margin-left: 320px;
 `;
@@ -16,10 +16,10 @@ const ButtonPer = styled(Button)`
   width: 100px;
 `;
 
-export default function ButtonMatches() {
+export default function ButtonMatches(props) {
   return (
     <DivContent>
-      <ButtonPer>
+      <ButtonPer onClick={props.matches}>
         <FavoriteIcon />
       </ButtonPer>
     </DivContent>
