@@ -58,7 +58,7 @@ export default function MatchCard() {
   let [matches, setMatches] = useState([]);
 
   const page = () => {
-    if (showMatches === true) {
+    if (!showMatches ) {
       return (
         <div>
           <ImgMediaCard
