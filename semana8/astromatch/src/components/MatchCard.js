@@ -25,8 +25,8 @@ const DivMain = styled.div`
 
 const BarHeader = styled.div`
   display: flex;
-  background-color: #000000;
   color: white;
+  background-color: #000000;
   align-items: center;
   justify-content: flex-end;
   height: 60px;
