@@ -16,7 +16,7 @@ import iconeCoracaoPreto from "../../img/favorite.svg";
 import iconeComentario from "../../img/comment_icon.svg";
 
 function Post(props) {
-  let [curtido, setCurtido] = useState(false);
+  const [curtido, setCurtido] = useState(false);
   let [comentando, setComentando] = useState(false);
   let [numeroCurtidas, setNumeroCurtidas] = useState(0);
   let [numeroComentarios, setNumeroComentarios] = useState(0);

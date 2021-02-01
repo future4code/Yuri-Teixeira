@@ -18,7 +18,7 @@ const DivMain = styled.div`
   display: flex;
   flex-direction: column;
   width: 1000px;
-  height: 950px;
+  height: 1000px;
   margin: 20px;
   background-color: #fdf0f6;
 `;
