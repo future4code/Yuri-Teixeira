@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
+import { goToHome, goToLogin } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -20,18 +22,30 @@ const Menus = styled.ul`
   display: flex;
 `;
 
-const ItensMenu = styled.li`
-padding: 5px;
-margin: 5px;
-`
+const ItensMenu = styled.a`
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+`;
 
 export default function Header() {
+  const history = useHistory();
+
   return (
     <DivContent>
-      <Plogo>Home</Plogo>
+      <ItensMenu href="" onClick={() => goToHome(history)}>
+        Home
+      </ItensMenu>
       <Menus>
-        <ItensMenu>Todas viagens</ItensMenu>
-        <ItensMenu>Login</ItensMenu>
+        <li>
+          <ItensMenu href="">Todas viagens</ItensMenu>
+        </li>
+        <li>
+          <ItensMenu href="" onClick={() => goToLogin(history)}>
+            Login
+          </ItensMenu>
+        </li>
       </Menus>
     </DivContent>
   );

@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
+import { goToLogin } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -20,6 +22,8 @@ const DivForm = styled.div`
 `;
 
 export default function Home() {
+  const history = useHistory();
+
   return (
     <DivContent>
       <TitleHome> Inscreva-se para embarcar nessa viagem!</TitleHome>
@@ -35,7 +39,10 @@ export default function Home() {
       </DivForm>
 
       <p>
-        Já é cadastrado? Faça login <a href="">aqui</a>!
+        Já é cadastrado? Faça login{" "}
+        <a href="" onClick={() => goToLogin(history)}>
+          aqui
+        </a>
       </p>
     </DivContent>
   );
