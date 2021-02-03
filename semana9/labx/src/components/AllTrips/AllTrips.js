@@ -2,6 +2,8 @@ import { React, useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import CardTrip from "./CardTrip";
+import { useHistory } from "react-router-dom";
+import { goToDetailTrip } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -27,6 +29,12 @@ export default function AllTrips() {
       });
   };
 
+  const history = useHistory();
+
+  const detailsTrip = (id) => {
+    goToDetailTrip(history, id);
+  };
+
   const tripsRenderized = trips.map((p) => {
     return (
       <CardTrip
@@ -35,6 +43,7 @@ export default function AllTrips() {
         date={p.date}
         durationInDays={p.durationInDays}
         description={p.description}
+        detailsTrip={() => detailsTrip(p.id)}
       />
     );
   });
@@ -44,5 +53,9 @@ export default function AllTrips() {
     getAllTrips();
   }, []);
 
-  return <DivContent>{tripsRenderized}</DivContent>;
+  return (
+    <>
+      <DivContent>{tripsRenderized}</DivContent>
+    </>
+  );
 }

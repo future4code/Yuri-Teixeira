@@ -17,6 +17,15 @@ const DivHeader = styled.div`
   color: white;
   height: 50px;
   align-items: center;
+  justify-content: space-between;
+
+  > button {
+    height: 100%;
+    width: 120px;
+    background-color: #00a8cc;
+    border-style: none;
+    cursor: pointer;
+  }
 `;
 
 const DivDetail = styled.div`
@@ -27,7 +36,6 @@ const DivDetail = styled.div`
 `;
 const DivDescription = styled.div`
   display: flex;
-  /* align-items: center; */
   border: 1px solid black;
   height: 35px;
   min-height: 200px;
@@ -36,7 +44,10 @@ const DivDescription = styled.div`
 export default function AllTrips(props) {
   return (
     <DivContent>
-      <DivHeader>{props.name}</DivHeader>
+      <DivHeader>
+        {props.name}
+        <button onClick={props.detailsTrip}>Detalhes</button>
+      </DivHeader>
       <DivDetail>Planeta: {props.planet}</DivDetail>
       <DivDetail>Data: {props.date}</DivDetail>
       <DivDetail>Duração em dias: {props.durationInDays}</DivDetail>
