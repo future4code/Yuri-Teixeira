@@ -21,9 +21,8 @@ export default function Router() {
         <Route exact path={"/alltrips"}>
           <AllTrips />
         </Route>
-        <Route exact path={"/detailtrip/:id"}>
-          <DetailTrip />
-        </Route>
+        <Route exact path={"/detailtrip/:trip"} />
+         
         <Route>
           <ErroPage />
         </Route>

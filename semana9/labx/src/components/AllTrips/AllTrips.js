@@ -4,6 +4,7 @@ import axios from "axios";
 import CardTrip from "./CardTrip";
 import { useHistory } from "react-router-dom";
 import { goToDetailTrip } from "../Routes/Coordinator";
+import DetailTrip from "../DetailTrip/DetailTrip";
 
 const DivContent = styled.div`
   display: flex;
@@ -31,25 +32,21 @@ export default function AllTrips() {
 
   const history = useHistory();
 
-  const detailsTrip = (id) => {
-    goToDetailTrip(history, id);
-  };
-
-  const tripsRenderized = trips.map((p) => {
+  let tripsRenderized = trips.map((trip) => {
     return (
       <CardTrip
-        name={p.name}
-        planet={p.planet}
-        date={p.date}
-        durationInDays={p.durationInDays}
-        description={p.description}
-        detailsTrip={() => detailsTrip(p.id)}
+        name={trip.name}
+        planet={trip.planet}
+        date={trip.date}
+        durationInDays={trip.durationInDays}
+        description={trip.description}
+        detailsTrip={() => goToDetailTrip(history, trip)}
       />
     );
   });
 
   useEffect(() => {
-    console.log(trips);
+    console.log("primeira busca de trips", trips);
     getAllTrips();
   }, []);
 
