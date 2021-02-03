@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
+import AllTrips from "../AllTrips/AllTrips";
 import ErroPage from "../ErroPage/ErroPage";
 
 export default function Router() {
@@ -15,6 +16,9 @@ export default function Router() {
         </Route>
         <Route exact path={"/login"}>
           <Login />
+        </Route>
+        <Route exact path={"/alltrips"}>
+          <AllTrips />
         </Route>
         <Route>
           <ErroPage />

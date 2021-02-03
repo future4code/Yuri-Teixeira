@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { goToHome, goToLogin } from "../Routes/Coordinator";
+import { goToHome, goToLogin, goToAllTrips } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -39,7 +39,7 @@ export default function Header() {
       </ItensMenu>
       <Menus>
         <li>
-          <ItensMenu href="">Todas viagens</ItensMenu>
+          <ItensMenu href="" onClick={() => goToAllTrips(history)}>Todas viagens</ItensMenu>
         </li>
         <li>
           <ItensMenu href="" onClick={() => goToLogin(history)}>
