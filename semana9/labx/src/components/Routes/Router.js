@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import AllTrips from "../AllTrips/AllTrips";
-import DetailTrip from '../DetailTrip/DetailTrip'
+import DetailTrip from "../DetailTrip/DetailTrip";
 import ErroPage from "../ErroPage/ErroPage";
 
 export default function Router() {
@@ -21,8 +21,9 @@ export default function Router() {
         <Route exact path={"/alltrips"}>
           <AllTrips />
         </Route>
-        <Route exact path={"/detailtrip/:trip"} />
-         
+
+        <Route exact path={"/detailtrip/:id"} component={DetailTrip} />
+
         <Route>
           <ErroPage />
         </Route>

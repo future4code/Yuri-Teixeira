@@ -32,6 +32,15 @@ const ItensMenu = styled.a`
 export default function Header() {
   const history = useHistory();
 
+  const logInlogOut = () => {
+    if(localStorage.getItem("token")){
+      localStorage.removeItem("token");
+      goToLogin(history);
+    } else {
+      goToLogin(history)
+    }
+  }
+
   return (
     <DivContent>
       <ItensMenu href="" onClick={() => goToHome(history)}>
@@ -42,8 +51,8 @@ export default function Header() {
           <ItensMenu href="" onClick={() => goToAllTrips(history)}>Todas viagens</ItensMenu>
         </li>
         <li>
-          <ItensMenu href="" onClick={() => goToLogin(history)}>
-            Login
+          <ItensMenu href="" onClick={() => logInlogOut()}>
+            {localStorage.getItem("token") ? "Logout" : "Login"}
           </ItensMenu>
         </li>
       </Menus>

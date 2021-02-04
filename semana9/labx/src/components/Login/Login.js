@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import axios from "axios";
+import { goToAllTrips } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -19,15 +22,51 @@ const DivBoxLogin = styled.div`
 `;
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const history = useHistory();
+
+  const changePass = (e) => {
+    setPass(e.target.value);
+  };
+
+  const changeEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const enter = () => {
+    const url = `https://us-central1-labenu-apis.cloudfunctions.net/labeX/yuri-pinheiro/login`;
+    const body = {
+      email: email,
+      password: pass,
+    };
+    const request = axios.post(url, body);
+
+    request
+      .then((res) => {
+        console.log(res);
+        if (res.data.success) {
+          localStorage.setItem("token", res.data.token);
+          goToAllTrips(history);
+        }
+      })
+      .catch((err) => {
+        alert("Não foi possível fazer login :(");
+        console.log(err);
+      });
+  };
+
   return (
     <DivContent>
       <DivBoxLogin>
         <p>Login</p>
-        <input type="text" />
+        <input type="text" onChange={changeEmail} value={email} />
         <p>Senha</p>
-        <input type="text" />
+        <input type="text" onChange={changePass} value={pass} />
         <br />
-        <button type="text">Entrar</button>
+        <button type="text" onClick={enter}>
+          Entrar
+        </button>
       </DivBoxLogin>
     </DivContent>
   );

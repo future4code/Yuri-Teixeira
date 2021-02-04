@@ -43,7 +43,7 @@ const DivDescription = styled.div`
 
 export default function AllTrips(props) {
   return (
-    <DivContent>
+    <DivContent >
       <DivHeader>
         {props.name}
         <button onClick={props.detailsTrip}>Detalhes</button>

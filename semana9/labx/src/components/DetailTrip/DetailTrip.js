@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams, useHistory } from "react-router-dom";
+import axios from "axios";
+import { goToLogin } from "../Routes/Coordinator";
 
+const Div = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 const DivContent = styled.div`
   display: flex;
@@ -32,9 +39,11 @@ const DivHeader = styled.div`
 
 const DivDetail = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   border: 1px solid black;
-  height: 35px;
+  padding: 2px;
+  min-height: 35px;
 `;
 const DivDescription = styled.div`
   display: flex;
@@ -44,21 +53,68 @@ const DivDescription = styled.div`
 `;
 
 export default function DetailTrip() {
-  const { trip } = useParams();
+  const { id } = useParams();
+  const [detailTrip, setDetailTrip] = useState({});
+  const history = useHistory();
 
-  console.log(trip);
+  const getDetailTrip = () => {
+    const url = `https://us-central1-labenu-apis.cloudfunctions.net/labeX/yuri-pinheiro/trip/${id}`;
+    axios
+      .get(url, {
+        headers: {
+          auth: localStorage.getItem("token"),
+        },
+      })
+      .then((res) => {
+        setDetailTrip(res.data.trip);
+      })
+      .catch((err) => {
+        console.log("Erro de getDetailTrip", err.message);
+      });
+  };
+
+  const renderCandidates = () => {
+    if (detailTrip.candidates) {
+      console.log("Render candidates success", detailTrip.candidates.length);
+
+      return detailTrip.candidates.map((p) => {
+        return (
+          <div key={p.id}>
+            <DivDetail>Nome: {p.name}</DivDetail>
+            <DivDetail>Idade: {p.age}</DivDetail>
+            <DivDetail>País: {p.country}</DivDetail>
+            <DivDetail>Profissão: {p.profession}</DivDetail>
+            <DivDetail>Sobre mim: {p.applicationText}</DivDetail>
+            <DivDetail>***********************************</DivDetail>
+          </div>
+        );
+      });
+    } else {
+      return (
+        <div>Ainda não há nenhum passageiro candidatado a essa viagem.</div>
+      );
+    }
+  };
+
+  useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      goToLogin(history);
+    }
+    getDetailTrip();
+  }, []);
+
   return (
-    <DivContent>
-      <DivHeader>
-        {trip.name}
-        <button onClick={trip.detailsTrip}>Detalhes</button>
-      </DivHeader>
-      <DivDetail>Planeta: {trip.planet}</DivDetail>
-      <DivDetail>Data: {trip.date}</DivDetail>
-      <DivDetail>Duração em dias: {trip.durationInDays}</DivDetail>
+    <Div>
+      <DivContent>
+        <DivHeader>{detailTrip.name}</DivHeader>
+        <DivDetail>Planeta: {detailTrip.planet}</DivDetail>
+        <DivDetail>Data: {detailTrip.date}</DivDetail>
+        <DivDetail>Duração em dias: {detailTrip.durationInDays}</DivDetail>
 
-      <DivDescription>Descrição: {trip.description}</DivDescription>
-      <div>lksdjfhgolaksjdhgf</div>
-    </DivContent>
+        <DivDescription>Descrição: {detailTrip.description}</DivDescription>
+        <DivHeader>Passageiros</DivHeader>
+        {renderCandidates()}
+      </DivContent>
+    </Div>
   );
 }

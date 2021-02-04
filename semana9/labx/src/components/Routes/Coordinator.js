@@ -6,9 +6,8 @@ export const goToLogin = (history) => {
   history.push("/login");
 };
 
-export const goToDetailTrip = (history, trip) => {
-  console.log('function goToDetailTrip');
-  history.push(`/detailtrip/${trip}`);
+export const goToDetailTrip = (history, id) => {
+  history.push(`/detailtrip/${id}`);
 };
 
 export const goToAllTrips = (history) => {
