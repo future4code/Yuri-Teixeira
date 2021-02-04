@@ -13,3 +13,7 @@ export const goToDetailTrip = (history, id) => {
 export const goToAllTrips = (history) => {
   history.push("/alltrips");
 };
+
+export const goToCreateTrip = (history) => {
+  history.push("/createtrip");
+};

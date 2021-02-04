@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { goToHome, goToLogin, goToAllTrips } from "../Routes/Coordinator";
+import { goToHome, goToLogin, goToAllTrips, goToCreateTrip } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -47,6 +47,9 @@ export default function Header() {
         Home
       </ItensMenu>
       <Menus>
+      <li>
+          <ItensMenu href="" onClick={() => goToCreateTrip(history)}>Criar viagem</ItensMenu>
+        </li>
         <li>
           <ItensMenu href="" onClick={() => goToAllTrips(history)}>Todas viagens</ItensMenu>
         </li>
