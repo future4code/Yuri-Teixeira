@@ -14,11 +14,14 @@ export const goToSignCandidate = (history, id) => {
   history.push(`/SignCandidate/${id}`);
 };
 
-
 export const goToAllTrips = (history) => {
   history.push("/alltrips");
 };
 
 export const goToCreateTrip = (history) => {
   history.push("/createtrip");
+};
+
+export const goToAproveCandidates = (history) => {
+  history.push("/aprovecandidates");
 };

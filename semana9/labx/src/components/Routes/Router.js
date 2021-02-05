@@ -8,6 +8,7 @@ import DetailTrip from "../DetailTrip/DetailTrip";
 import ErroPage from "../ErroPage/ErroPage";
 import CreateTrip from "../CreateTrip/CreateTrip";
 import SignCandidate from '../SignCandidate/SignCandidate'
+import AproveCandidates from '../AproveCandidate/AproveCandidate'
 
 export default function Router() {
   return (
@@ -25,6 +26,9 @@ export default function Router() {
         </Route>
         <Route exact path={"/createtrip"}>
           <CreateTrip />
+        </Route>
+        <Route exact path={"/aprovecandidates"}>
+          <AproveCandidates />
         </Route>
 
         <Route exact path={"/detailtrip/:id"} component={DetailTrip} />
