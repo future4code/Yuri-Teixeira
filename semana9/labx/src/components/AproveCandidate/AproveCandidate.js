@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
-import { goToLogin, goToSignCandidate } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -11,8 +9,8 @@ const DivContent = styled.div`
 `;
 
 export default function AproveCandidates() {
-  const [ trips, setTrips ] = useState({});
-  const [ tripCandidates, setTripCandidates ] = useState({});
+  const [trips, setTrips] = useState([]);
+  const [tripCandidates, setTripCandidates] = useState({});
 
   const getTrips = () => {
     const url =
@@ -21,7 +19,6 @@ export default function AproveCandidates() {
     axios
       .get(url)
       .then((res) => {
-        console.log(res.data.trips);
         setTrips(res.data.trips);
       })
       .catch((err) => {
@@ -41,7 +38,7 @@ export default function AproveCandidates() {
       axios
         .get(url, headers)
         .then((res) => {
-          console.log(res);
+          console.log(res.data.trip.name);
         })
         .catch((err) => {
           console.log(err);
@@ -51,8 +48,8 @@ export default function AproveCandidates() {
 
   useEffect(() => {
     getTrips();
-    
+    getCandidates();
   }, []);
 
-  return <DivContent>aaa</DivContent>;
+  return <button onClick={getCandidates}>aaa</button>;
 }
