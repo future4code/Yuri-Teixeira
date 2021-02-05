@@ -13,15 +13,18 @@ const DivContent = styled.div`
 const FormCreateTrip = styled.form`
   display: flex;
   flex-direction: column;
+  >input{
+    width: 500px;
+  }
 `;
 
 export default function CreateTrip() {
   const [form, onChange, clearFields] = UseForm({
-    name: "Salvar ET's na constelação de orion",
-    planet: "Contelação de Orion",
-    date: "2072-01-01",
-    description: "Salvar ET's na constelação de orion",
-    durationInDays: "29876",
+    name: "",
+    planet: "",
+    date: "",
+    description: "",
+    durationInDays: "",
   });
 
   const createTrip = (event) => {

@@ -12,10 +12,6 @@ const DivContent = styled.div`
   justify-content: space-between;
 `;
 
-const Plogo = styled.p`
-  margin: 10px;
-`;
-
 const Menus = styled.ul`
   text-decoration: none;
   list-style: none;

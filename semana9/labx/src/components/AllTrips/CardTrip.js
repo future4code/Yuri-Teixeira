@@ -1,5 +1,7 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import { goToSignCandidate } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -41,9 +43,16 @@ const DivDescription = styled.div`
   min-height: 200px;
 `;
 
+const ButtonSign = styled.button`
+  cursor: pointer;
+  height: 50px;
+`;
+
 export default function AllTrips(props) {
+  const history = useHistory();
+
   return (
-    <DivContent >
+    <DivContent>
       <DivHeader>
         {props.name}
         <button onClick={props.detailsTrip}>Detalhes</button>
@@ -53,6 +62,13 @@ export default function AllTrips(props) {
       <DivDetail>Duração em dias: {props.durationInDays}</DivDetail>
 
       <DivDescription>Descrição: {props.description}</DivDescription>
+      <ButtonSign
+        onClick={() => {
+          goToSignCandidate(history, props.id);
+        }}
+      >
+        Quero me inscrever!
+      </ButtonSign>
     </DivContent>
   );
 }

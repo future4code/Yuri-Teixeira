@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
-import { goToLogin } from "../Routes/Coordinator";
+import { goToLogin, goToSignCandidate } from "../Routes/Coordinator";
 
 const Div = styled.div`
   display: flex;
@@ -45,12 +45,17 @@ const DivDetail = styled.div`
   padding: 2px;
   min-height: 35px;
 `;
+
 const DivDescription = styled.div`
   display: flex;
   border: 1px solid black;
   height: 35px;
   min-height: 200px;
 `;
+
+const ButtonSign = styled.button`
+height: 50px;
+`
 
 export default function DetailTrip() {
   const { id } = useParams();
@@ -74,9 +79,10 @@ export default function DetailTrip() {
   };
 
   const renderCandidates = () => {
-    if (detailTrip.candidates) {
-      console.log("Render candidates success", detailTrip.candidates.length);
-
+    if (
+      typeof detailTrip.candidates === "object" &&
+      detailTrip.candidates.length > 0
+    ) {
       return detailTrip.candidates.map((p) => {
         return (
           <div key={p.id}>
@@ -90,9 +96,7 @@ export default function DetailTrip() {
         );
       });
     } else {
-      return (
-        <div>Ainda não há nenhum passageiro candidatado a essa viagem.</div>
-      );
+      return <div>Ainda não há candidatos a essa viagem.</div>;
     }
   };
 
@@ -114,6 +118,7 @@ export default function DetailTrip() {
         <DivDescription>Descrição: {detailTrip.description}</DivDescription>
         <DivHeader>Passageiros</DivHeader>
         {renderCandidates()}
+        <ButtonSign onClick={() => {goToSignCandidate(history,id)}}>Entrar nessa viagem!</ButtonSign>
       </DivContent>
     </Div>
   );

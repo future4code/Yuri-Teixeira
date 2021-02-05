@@ -34,6 +34,7 @@ export default function AllTrips() {
   const tripsRenderized = trips.map((trip) => {
     return (
       <CardTrip
+        id={trip.id}
         key={trip.id}
         name={trip.name}
         planet={trip.planet}

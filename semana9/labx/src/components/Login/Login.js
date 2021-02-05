@@ -60,13 +60,11 @@ export default function Login() {
     <DivContent>
       <DivBoxLogin>
         <p>Login</p>
-        <input type="text" onChange={changeEmail} value={email} />
+        <input type="email" onChange={changeEmail} value={email} />
         <p>Senha</p>
         <input type="text" onChange={changePass} value={pass} />
         <br />
-        <button type="text" onClick={enter}>
-          Entrar
-        </button>
+        <button onClick={enter}>Entrar</button>
       </DivBoxLogin>
     </DivContent>
   );

@@ -10,6 +10,11 @@ export const goToDetailTrip = (history, id) => {
   history.push(`/detailtrip/${id}`);
 };
 
+export const goToSignCandidate = (history, id) => {
+  history.push(`/SignCandidate/${id}`);
+};
+
+
 export const goToAllTrips = (history) => {
   history.push("/alltrips");
 };
