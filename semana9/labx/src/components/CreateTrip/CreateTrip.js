@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import axios from "axios";
 import UseForm from "../../Hooks/UseForm";
+import { goToLogin } from "../Routes/Coordinator";
 
 const DivContent = styled.div`
   display: flex;
@@ -13,7 +15,7 @@ const DivContent = styled.div`
 const FormCreateTrip = styled.form`
   display: flex;
   flex-direction: column;
-  >input{
+  > input {
     width: 500px;
   }
 `;
@@ -26,6 +28,7 @@ export default function CreateTrip() {
     description: "",
     durationInDays: "",
   });
+  const history = useHistory();
 
   const createTrip = (event) => {
     event.preventDefault();
@@ -50,6 +53,12 @@ export default function CreateTrip() {
 
     clearFields();
   };
+
+  useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      goToLogin(history);
+    }
+  }, []);
 
   return (
     <DivContent>
