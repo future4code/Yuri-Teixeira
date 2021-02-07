@@ -3,11 +3,13 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import axios from "axios";
 import { goToAllTrips } from "../Routes/Coordinator";
+import img from "../../images/space6.png";
 
 const DivContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(${img});
 `;
 
 const DivBoxLogin = styled.div`
@@ -17,7 +19,7 @@ const DivBoxLogin = styled.div`
   justify-content: center;
   border: 1px solid black;
   width: 500px;
-  height: 500px;
+  height: 100vh;
   margin-top: 150px;
 `;
 

@@ -1,15 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { goToHome, goToLogin, goToAllTrips, goToCreateTrip } from "../Routes/Coordinator";
+import {
+  goToHome,
+  goToLogin,
+  goToAllTrips,
+  goToCreateTrip,
+} from "../Routes/Coordinator";
+import HomeIcon from "@material-ui/icons/Home";
 
 const DivContent = styled.div`
   display: flex;
   height: 60px;
-  background-color: #142850;
+  background-color: black;
   color: white;
   align-items: center;
   justify-content: space-between;
+`;
+
+const IconContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  height: 100%;
+  :hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
 `;
 
 const Menus = styled.ul`
@@ -19,36 +38,43 @@ const Menus = styled.ul`
 `;
 
 const ItensMenu = styled.a`
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   text-decoration: none;
   color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+
+  :hover {
+    background-color: white;
+    color: black;
+  }
 `;
 
 export default function Header() {
   const history = useHistory();
 
   const logInlogOut = () => {
-    if(localStorage.getItem("token")){
+    if (localStorage.getItem("token")) {
       localStorage.removeItem("token");
       goToLogin(history);
     } else {
-      goToLogin(history)
+      goToLogin(history);
     }
-  }
+  };
 
   return (
     <DivContent>
-      <ItensMenu href="" onClick={() => goToHome(history)}>
-        Home
-      </ItensMenu>
+      <IconContent>
+        <HomeIcon style={{ fontSize: 40 }} onClick={() => goToHome(history)} />
+      </IconContent>
       <Menus>
-      <li>
-          <ItensMenu href="" onClick={() => goToCreateTrip(history)}>Criar viagem</ItensMenu>
-        </li>
         <li>
-          <ItensMenu href="" onClick={() => goToAllTrips(history)}>Todas viagens</ItensMenu>
+          <ItensMenu href="" onClick={() => goToAllTrips(history)}>
+            Todas viagens
+          </ItensMenu>
         </li>
+        
         <li>
           <ItensMenu href="" onClick={() => logInlogOut()}>
             {localStorage.getItem("token") ? "Logout" : "Login"}
