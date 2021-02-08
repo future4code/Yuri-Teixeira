@@ -4,6 +4,7 @@ import axios from "axios";
 import CardTrip from "./CardTrip";
 import { useHistory } from "react-router-dom";
 import { goToDetailTrip } from "../Routes/Coordinator";
+import img from "../../images/space6.png";
 
 const DivContent = styled.div`
   display: flex;
@@ -11,6 +12,9 @@ const DivContent = styled.div`
   align-items: center;
   justify-content: center;
   background-color: black;
+  background-image: url(${img});
+  background-repeat: no-repeat;
+  background-position: bottom;
 `;
 
 export default function AllTrips() {
