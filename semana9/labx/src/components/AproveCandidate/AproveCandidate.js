@@ -46,8 +46,6 @@ export default function AproveCandidates() {
   };
 
   const getCandidates = () => {
-    let newArray = [];
-
     trips.map((trip) => {
       const url = `https://us-central1-labenu-apis.cloudfunctions.net/labeX/yuri-pinheiro/trip/${trip.id}`;
       const headers = {
@@ -59,18 +57,18 @@ export default function AproveCandidates() {
       axios
         .get(url, headers)
         .then((res) => {
-          newArray = [...newArray, res.data.trip]; 
+          console.log(res.data.trip.name);
+          setDetailsTrip(res.data.trip);
         })
         .catch((err) => {
           console.log(err);
         });
     });
 
-    setDetailsTrip(newArray); 
-    console.log("executing getCandidates", detailsTrip); 
-  }; 
+    console.log("executing getCandidates", detailsTrip);
+  };
 
-  const candidatesRenderized = detailsTrip.map((trip) => {
+  const candidatesRenderized = detailsTrip[0] && detailsTrip.map((trip) => {
     return (
       <div>
         <DivHeader>{trip.name}</DivHeader>
@@ -80,8 +78,11 @@ export default function AproveCandidates() {
 
   useEffect(() => {
     getTrips();
-    getCandidates();
   }, []);
+
+  useEffect(() => {
+    getCandidates();
+  }, [trips]);
 
   return (
     <>
