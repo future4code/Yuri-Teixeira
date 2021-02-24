@@ -3,7 +3,7 @@ import { useHistory, BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import Home from "../Pages/Home/Home";
-import PostFeed from '../Components/PostFeed/PostFeed'
+import PostFeed from '../Components/PostFeed/Container/PostFeed'
 
 export default function Routes() {
   return (
