@@ -1,3 +1,4 @@
+//POST FEED
 import styled from "styled-components";
 
 export const DivContent = styled.div`
@@ -22,10 +23,23 @@ export const DivHeader = styled.div`
 export const DivFooter = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-top: 1px solid black;
   width: 500px;
   height: 35px;
   bottom: 0px;
   position: absolute;
 `;
+
+export const DivButton = styled.div`
+  display: flex;
+`;
+
+export const InputComment = styled.div`
+  height: 100%;
+  text-align: center;
+`;
+
+export const DivComment = styled.div`
+display: flex;
+`

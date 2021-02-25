@@ -2,10 +2,10 @@ import React from "react";
 import { ButtonStyled, Counter } from "./Styled";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
-export default function ButtonDown() {
+export default function ButtonDown(props) {
   return (
     <div>
-      <ButtonStyled>
+      <ButtonStyled onClick={props.onClick}>
         <KeyboardArrowDownIcon />
       </ButtonStyled>
     </div>
