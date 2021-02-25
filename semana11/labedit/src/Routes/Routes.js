@@ -3,7 +3,7 @@ import { useHistory, BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import Home from "../Pages/Home/Home";
-import PostFeed from '../Components/PostFeed/Container/PostFeed'
+import DetailsPost from '../Pages/DetailsPost/DetailsPost'
 
 export default function Routes() {
   return (
@@ -18,11 +18,11 @@ export default function Routes() {
         <Route exact path="/home">
           <Home />
         </Route>
-        <Route exact path="/post">
-          <PostFeed />
+        <Route exact path="/detailspost/:id">
+          <DetailsPost />
         </Route>
         <Route>
-          <div>Erro page</div>
+          <div>Error 404 - Page not found</div>
         </Route>
       </Switch>
     </BrowserRouter>

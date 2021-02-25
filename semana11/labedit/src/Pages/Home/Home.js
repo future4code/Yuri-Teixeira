@@ -60,6 +60,7 @@ export default function Home() {
         key={post.id}
         id={post.id}
         onClickUp={() => votePost(1, post.id)}
+        userVoteDirection={post.userVoteDirection}
         onClickDown={() => votePost(-1, post.id)}
         username={post.username}
         text={post.text}

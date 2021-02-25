@@ -42,4 +42,5 @@ export const InputComment = styled.div`
 
 export const DivComment = styled.div`
 display: flex;
+
 `

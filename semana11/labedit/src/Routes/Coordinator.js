@@ -9,3 +9,7 @@ export function goToSignUp(history) {
 export function goToHome(history) {
   history.push("/home");
 }
+
+export function goToDetailsPost(history,id) {
+  history.push(`/home/${id}`);
+}
