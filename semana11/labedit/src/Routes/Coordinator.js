@@ -11,5 +11,5 @@ export function goToHome(history) {
 }
 
 export function goToDetailsPost(history,id) {
-  history.push(`/home/${id}`);
+  history.push(`/detailspost/${id}`);
 }

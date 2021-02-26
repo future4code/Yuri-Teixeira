@@ -44,7 +44,7 @@ export default function PostFeed(props) {
 
   return (
     <DivContent>
-      <DivHeader>{props.username}</DivHeader>
+      <DivHeader onClick={props.onClickHeader}>{props.username}</DivHeader>
       <InputComment>{props.text}</InputComment>
       <DivFooter>
         <DivButton>

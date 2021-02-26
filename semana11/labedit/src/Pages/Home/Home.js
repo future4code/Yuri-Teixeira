@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import styled from "styled-components";
 
-import { goToLogin } from "../../Routes/Coordinator";
+import { goToLogin, goToDetailsPost } from "../../Routes/Coordinator";
 import { DivContent, DivNewPost, DivPosts } from "./Styled";
 import PostFeed from "../../Components/PostFeed/Container/PostFeed";
 
@@ -60,8 +60,11 @@ export default function Home() {
         key={post.id}
         id={post.id}
         onClickUp={() => votePost(1, post.id)}
-        userVoteDirection={post.userVoteDirection}
         onClickDown={() => votePost(-1, post.id)}
+        onClickHeader={() => {
+          goToDetailsPost(history, post.id);
+        }}
+        userVoteDirection={post.userVoteDirection}
         username={post.username}
         text={post.text}
         votesCount={post.votesCount}

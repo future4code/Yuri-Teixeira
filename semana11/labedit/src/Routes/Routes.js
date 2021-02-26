@@ -15,7 +15,7 @@ export default function Routes() {
         <Route exact path="/signup">
           <SignUp />
         </Route>
-        <Route exact path="/home">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="/detailspost/:id">

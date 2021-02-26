@@ -18,6 +18,7 @@ export const DivHeader = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  cursor: pointer;
 `;
 
 export const DivFooter = styled.div`
