@@ -7,7 +7,7 @@ export function goToSignUp(history) {
 }
 
 export function goToHome(history) {
-  history.push("/home");
+  history.push("/");
 }
 
 export function goToDetailsPost(history,id) {
