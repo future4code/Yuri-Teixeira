@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { useHistory } from "react-router-dom";
-import { goToLogin } from "../Routes/Coordinator";
-import axios from "axios";
+
+import Section1 from "./Section1/Section1";
+import Section2 from "./Section2/Section2";
+import Section3 from "./Section3/Section3";
+import Section4 from "./Section4/Section4";
+import Section5 from "./Section5/Section5";
 
 const DivContent = styled.div`
   display: flex;
@@ -11,79 +14,14 @@ const DivContent = styled.div`
   flex-direction: column;
 `;
 
-const TitleHome = styled.h1`
-  font-size: 1.5rem;
-  margin: 20px;
-`;
-
-const DivForm = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
-  const history = useHistory();
-
-  const cadastrar = () => {
-    const url = `https://us-central1-labenu-apis.cloudfunctions.net/labeX/yuri-pinheiro/signup`;
-    const body = {
-      email: email,
-      password: pass,
-    };
-    const request = axios.post(url, body);
-
-    request
-      .then((res) => {
-        setEmail('');
-        setPass('');
-        console.log(res);
-      })
-      .catch((err) => {
-        alert('Erro ao cadastrar :(')
-        console.log(err);
-      });
-  };
-
-  const changePass = (e) => {
-    setPass(e.target.value);
-  };
-
-  const changeEmail = (e) => {
-    setEmail(e.target.value);
-  };
-
   return (
     <DivContent>
-      <TitleHome> Inscreva-se para embarcar nessa viagem!</TitleHome>
-      <DivForm>
-          <p>Email</p>
-          <input
-            type="text"
-            placeholder="Insira seu e-mail"
-            onChange={changeEmail}
-            value={email}
-          />
-          <p>Senha</p>
-          <input
-            type="text"
-            placeholder="Nova senha"
-            onChange={changePass}
-            value={pass}
-          />
-          <br />
-          <button  onClick={cadastrar}>Cadastrar!</button>
-      </DivForm>
-
-      <p>
-        Já é cadastrado? Faça login{" "}
-        <a href="" onClick={() => goToLogin(history)}>
-          aqui
-        </a>
-      </p>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section5 />
+      <Section4 />
     </DivContent>
   );
 }

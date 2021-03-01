@@ -4,10 +4,38 @@ import styled from "styled-components";
 import axios from "axios";
 import { goToAllTrips } from "../Routes/Coordinator";
 
+import img from "../../images/space6.png";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    "& > *": {
+      margin: theme.spacing(1),
+      width: "25ch",
+    },
+  },
+}));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#000000",
+    },
+    secondary: {
+      main: "#f44336",
+    },
+  },
+});
+
 const DivContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(${img});
+  height: 100vh;
 `;
 
 const DivBoxLogin = styled.div`
@@ -18,7 +46,11 @@ const DivBoxLogin = styled.div`
   border: 1px solid black;
   width: 500px;
   height: 500px;
-  margin-top: 150px;
+  background-color: white;
+`;
+
+const InputLogins = styled(TextField)`
+  width: 350px;
 `;
 
 export default function Login() {
@@ -58,14 +90,35 @@ export default function Login() {
 
   return (
     <DivContent>
-      <DivBoxLogin>
-        <p>Login</p>
-        <input type="email" onChange={changeEmail} value={email} />
-        <p>Senha</p>
-        <input type="text" onChange={changePass} value={pass} />
-        <br />
-        <button onClick={enter}>Entrar</button>
-      </DivBoxLogin>
+      <ThemeProvider theme={theme}>
+        <DivBoxLogin>
+          <InputLogins
+            id="outlined-basic"
+            label="Login"
+            variant="outlined"
+            onChange={changeEmail}
+            value={email}
+            color="primary"
+            margin="dense"
+          />
+          <InputLogins
+            id="outlined-basic"
+            label="Senha"
+            variant="outlined"
+            onChange={changeEmail}
+            value={email}
+            color="primary"
+            onChange={changePass}
+            value={pass}
+            margin="dense"
+            type="password"
+          />
+          <br />
+          <Button variant="contained" color="primary" onClick={enter}>
+            Entrar
+          </Button>
+        </DivBoxLogin>
+      </ThemeProvider>
     </DivContent>
   );
 }

@@ -4,22 +4,54 @@ import styled from "styled-components";
 import axios from "axios";
 import UseForm from "../../Hooks/UseForm";
 import { goToDetailTrip } from "../Routes/Coordinator";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#000000",
+    },
+    secondary: {
+      main: "#f44336",
+    },
+  },
+});
 
 const DivContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: black;
+  height: 100vh;
+`;
+
+const DivContentForm = styled.div`
+  background-color: white;
+  width: 900px;
+  padding: 0px 40px;
+  height: 700px;
+  border-radius: 5px;
 `;
 
 const FormCreateTrip = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
   > input {
     width: 500px;
   }
 `;
+
+const Title = styled.p`
+  font-size: 40px;
+  margin: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  text-align: center;
+`;
+
+const Inputs = styled(TextField)``;
 
 export default function SignCandidate() {
   const { id } = useParams();
@@ -51,49 +83,62 @@ export default function SignCandidate() {
 
   return (
     <DivContent>
-      <FormCreateTrip action="" onSubmit={saveCandidate}>
-        <input
-          // required
-          type="text"
-          name="name"
-          onChange={onChange}
-          value={form.name}
-          placeholder="Nome"
-        />
-        <input
-          // required
-          type="number"
-          name="age"
-          onChange={onChange}
-          value={form.age}
-          placeholder="Idade"
-        />
-        <input
-          // required
-          type="text"
-          name="applicationText"
-          onChange={onChange}
-          value={form.applicationText}
-          placeholder="Por que você deve ir?"
-        />
-        <input
-          // required
-          type="text"
-          name="profession"
-          onChange={onChange}
-          value={form.profession}
-          placeholder="Profissão"
-        />
-        <input
-          // required
-          type="text"
-          name="country"
-          onChange={onChange}
-          value={form.country}
-          placeholder="País"
-        />
-        <button>Inscrever-se!</button>
-      </FormCreateTrip>
+      <ThemeProvider theme={theme}>
+        <DivContentForm>
+          <Title>Formulário de inscrição</Title>
+          <FormCreateTrip action="" onSubmit={saveCandidate}>
+            <Inputs
+              required
+              id="standard-required"
+              label="Nome completo"
+              name="name"
+              onChange={onChange}
+              value={form.name}
+              defaultValue={form.name}
+            />
+            <Inputs
+              required
+              name="country"
+              onChange={onChange}
+              value={form.country}
+              id="standard-required"
+              label="País de origem"
+              type="text"
+            />
+            <Inputs
+              required
+              name="age"
+              onChange={onChange}
+              value={form.age}
+              id="standard-required"
+              label="Idade"
+              type="number"
+            />
+            <Inputs
+              required
+              name="profession"
+              onChange={onChange}
+              value={form.profession}
+              id="standard-required"
+              label="Profissão"
+              type="text"
+            />
+            <Inputs
+              required
+              name="applicationText"
+              onChange={onChange}
+              value={form.applicationText}
+              id="standard-required"
+              label="Por que você deve ir ?"
+              type="text"
+            />
+            <br />
+            <Button type="submit" variant="contained" color="primary">
+              Embarcar!
+            </Button>
+          </FormCreateTrip>
+        </DivContentForm>
+      </ThemeProvider>
     </DivContent>
   );
 }
