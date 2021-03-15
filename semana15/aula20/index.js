@@ -1,1 +1,0 @@
-console.log('hello world', process.argv[2],process.argv[3]);
