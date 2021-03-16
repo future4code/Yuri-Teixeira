@@ -20,11 +20,10 @@ const post3: post = {
 
 const arrayPosts: post[] = [post1, post2, post3];
 
-function buscarPostsPorAutor(posts: post[], autorInformado: string) {
+function buscarPostsPorAutor(posts: post[], autorInformado: string): post[] {
   return posts.filter((post) => {
     return post.autor === autorInformado;
   });
 }
 
-console.log(buscarPostsPorAutor(arrayPosts,'b'));
-
+console.log(buscarPostsPorAutor(arrayPosts, "b"));
