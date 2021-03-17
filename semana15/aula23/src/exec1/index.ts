@@ -58,7 +58,7 @@ app.get("/countries/:id", (req: Request, res: Response) => {
 
 app.put("/countries/:id", (req: Request, res: Response) => {
   if (!req.params.id || !req.body) {
-    res.status(401).send("Obrigatório todos os parametros!")
+    res.status(401).send("Obrigatório todos os parametros!");
     return;
   }
 
@@ -74,4 +74,52 @@ app.put("/countries/:id", (req: Request, res: Response) => {
   });
 
   res.status(200).send(alteredCountries);
+});
+
+app.delete("/countries/:id", (req: Request, res: Response) => {
+  try {
+    if (!req.headers.authorization) {
+      throw Error("nao autorizado");
+    }
+
+    const id: number = Number(req.params.id);
+    let newCountries: country[] = [...countries];
+
+    newCountries = newCountries.filter((p) => {
+      return p.id !== id;
+    });
+
+    res.status(200).send(newCountries);
+  } catch (error) {
+    res.status(401).send({ message: "não autorizado" });
+  }
+});
+
+app.post("/countries/create", (req: Request, res: Response) => {
+  let errorCode: number = 0;
+  try {
+    if (!req.body.name || !req.body.capital || !req.body.continent) {
+      errorCode = 400;
+      throw Error("O body está incompleto ou incorreto!");
+    }
+    if (!req.headers.authorization) {
+      errorCode = 401;
+      throw Error("Não autorizado");
+    }
+
+    const newCountry = {
+      message: "New country successfully created!",
+      newCountry: {
+        id: Date.now(),
+        name: req.body.name,
+        capital: req.body.capital,
+        continent: req.body.continent,
+      },
+    };
+
+    countries.push(newCountry.newCountry);
+    res.status(200).send(newCountry);
+  } catch (error) {
+    res.status(errorCode).send(error.message);
+  }
 });
