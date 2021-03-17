@@ -1,16 +1,44 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import { countries } from "../countries";
+import { countries, country } from "../countries";
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.listen(3000, () => {
+  console.table("App escutando na porta 3000");
+});
 
 app.get("/countries/all", (req: Request, res: Response) => {
   const result = countries.map((ct) => {
     return { id: ct.id, nome: ct.name };
   });
   res.status(200).send(result);
+});
+
+app.get("/countries/search", (req: Request, res: Response) => {
+  const name = req.query.name as string;
+  let countriesFiltered: country[] = [...countries];
+
+  if (name) {
+    countriesFiltered = countriesFiltered.filter((ct) => {
+      return ct.name.includes(name as string);
+    });
+  }
+
+  if (req.query.capital) {
+    countriesFiltered = countriesFiltered.filter((ct) => {
+      return ct.capital.includes(req.query.capital as string);
+    });
+  }
+
+  if (req.query.continent) {
+    countriesFiltered = countriesFiltered.filter((ct) => {
+      return ct.continent.includes(req.query.continent as string);
+    });
+  }
+
+  res.status(200).send({ countriesFiltered });
 });
 
 app.get("/countries/:id", (req: Request, res: Response) => {
@@ -28,10 +56,22 @@ app.get("/countries/:id", (req: Request, res: Response) => {
   }
 });
 
-app.listen(3000, () => {
-  console.table("App escutando na porta 3000");
-});
+app.put("/countries/:id", (req: Request, res: Response) => {
+  if (!req.params.id || !req.body) {
+    res.status(401).send("Obrigatório todos os parametros!")
+    return;
+  }
 
-app.get("/countries/search",(req: Request, res: Response)=>{
-  
-})
+  let alteredCountries: country[] = [...countries];
+  const id: number = Number(req.params.id);
+
+  alteredCountries = alteredCountries.map((p) => {
+    if (p.id === id) {
+      return { ...p, name: req.body.name, capital: req.body.capital };
+    } else {
+      return p;
+    }
+  });
+
+  res.status(200).send(alteredCountries);
+});
