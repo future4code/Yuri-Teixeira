@@ -118,4 +118,77 @@ app.get("/users", (req: Request, res: Response) => {
 });
 
 //a) query params
-//b)
+//b) feito
+
+//4
+app.put("/users", (req: Request, res: Response) => {
+  const id: number = Number(req.params.id);
+  let errorCode = 400;
+
+  try {
+    const newUser: userType = {
+      id: Date.now(),
+      name: req.body.name,
+      email: req.body.email,
+      type: req.body.type,
+      age: req.body.age,
+    };
+
+    users.push(newUser);
+    res.status(200).send(users);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+//a) não mudou nada
+//b) nao sei, ainda estou aprendendo as diferenças de cada um.
+
+//5
+app.put("/users/:id", (req: Request, res: Response) => {
+  try {
+    const id: number = Number(req.params.id);
+    users = users.map((p) => {
+      if (p.id === id) {
+        return { ...p, name: req.body.name + "-ALTERADO" };
+      } else {
+        return p;
+      }
+    });
+
+    res.status(200).send(users);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+//6
+app.patch("/users/:id", (req: Request, res: Response) => {
+  try {
+    const id: number = Number(req.params.id);
+    users = users.map((p) => {
+      if (p.id === id) {
+        return { ...p, name: req.body.name + "-REALTERADO" };
+      } else {
+        return p;
+      }
+    });
+
+    res.status(200).send(users);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+//7
+app.delete("/users/:id", (req: Request, res: Response) => {
+  try {
+    const id: number = Number(req.params.id);
+    users = users.filter((p) => {
+      return p.id !== id;
+    });
+    res.status(200).send(users);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
