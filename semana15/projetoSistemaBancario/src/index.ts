@@ -11,7 +11,7 @@ app.listen(port, () => {
   console.log(`The app is running on port ${port}`);
 });
 
-app.post("/users", (req: Request, res: Response) => {
+app.post("/newUser", (req: Request, res: Response) => {
   let errorCode: number = 400;
   try {
     const { name, cpf, birthDay } = req.body;
@@ -43,7 +43,6 @@ app.post("/users", (req: Request, res: Response) => {
       return years;
     };
 
-
     if (verifyAge() < 18) {
       throw new Error("The user must be 18 years or older.");
     }
@@ -59,6 +58,32 @@ app.post("/users", (req: Request, res: Response) => {
 
     users.push(newUser);
     res.status(200).send({ message: "User created sucessfuly.", users });
+  } catch (error) {
+    res.status(errorCode).send(error.message);
+  }
+});
+
+app.get("/user", (req: Request, res: Response) => {
+  let errorCode = 400;
+  const { name, cpf } = req.body;
+
+  try {
+    if (!name || !cpf) {
+      throw new Error("Invalid body.");
+    }
+
+    const index = users.findIndex((p) => {
+      return p.cpf === cpf && p.name === name;
+    });
+
+    if (index > -1) {
+      res
+        .status(200)
+        .send(`${users[index].name} has balance of: ${users[index].balance}`);
+    } else {
+      errorCode = 404;
+      throw new Error("User not found");
+    }
   } catch (error) {
     res.status(errorCode).send(error.message);
   }
