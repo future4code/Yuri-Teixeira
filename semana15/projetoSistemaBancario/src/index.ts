@@ -79,10 +79,47 @@ app.get("/user", (req: Request, res: Response) => {
     if (index > -1) {
       res
         .status(200)
-        .send(`${users[index].name} has balance of: ${users[index].balance}`);
+        .send(
+          `${users[index].name} has balance of: $${users[index].balance.toFixed(
+            2
+          )}`
+        );
     } else {
       errorCode = 404;
       throw new Error("User not found");
+    }
+  } catch (error) {
+    res.status(errorCode).send(error.message);
+  }
+});
+
+app.put("/userCredit", (req: Request, res: Response) => {
+  let errorCode = 400;
+  const name: string = req.body.name;
+  const cpf: string = req.body.cpf;
+  const credit: number = Number(req.body.credit);
+  
+  try {
+    if (!name || !cpf || !credit) {
+      throw new Error("Body invalid!");
+    }
+    if (isNaN(credit)) {
+      errorCode = 422;
+      throw new Error("The credit amount must be an integer.");
+    }
+
+    const index = users.findIndex((p) => {
+      return p.cpf === cpf && p.name === name;
+    });
+
+    if (index > -1) {
+      users[index].balance += credit;
+      res
+        .status(200)
+        .send(`Credit added successfully! Balance: ${users[index].balance}`);
+    } else {
+      errorCode = 404;
+      throw new Error("User not found!");
     }
   } catch (error) {
     res.status(errorCode).send(error.message);
