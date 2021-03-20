@@ -93,12 +93,45 @@ app.get("/user", (req: Request, res: Response) => {
   }
 });
 
+app.put("/userPay", (req: Request, res: Response) => {
+  let errorCode = 400;
+  try {
+    const cpf: string = req.body.cpf;
+    const description: string = req.body.description;
+    const datePayment = new Date(req.body.datePayment).toDateString();
+    const value: number = Number(req.body.value);
+    const indexUser = users.findIndex((p) => {
+      return p.cpf === cpf;
+    });
+    const today = new Date().toDateString();
+
+    if (!description || !datePayment || !value || !cpf) {
+      throw new Error("Body invalid!");
+    }
+
+    if (indexUser === -1) {
+      errorCode = 404;
+      throw new Error("User not found!");
+    }
+
+    if (datePayment < today) {
+      res
+        .status(401)
+        .send("The payment date cannot be greater than the current date.");
+    }
+
+    res.send(200);
+  } catch (error) {
+    res.status(errorCode).send(error.message);
+  }
+});
+
 app.put("/userCredit", (req: Request, res: Response) => {
   let errorCode = 400;
   const name: string = req.body.name;
   const cpf: string = req.body.cpf;
   const credit: number = Number(req.body.credit);
-  
+
   try {
     if (!name || !cpf || !credit) {
       throw new Error("Body invalid!");
