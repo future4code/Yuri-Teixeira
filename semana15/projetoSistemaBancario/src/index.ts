@@ -168,3 +168,51 @@ app.put("/userCredit", (req: Request, res: Response) => {
     res.status(errorCode).send(error.message);
   }
 });
+
+app.put("/userTransfer", (req: Request, res: Response) => {
+  let errorCode = 400;
+  const name: string = req.body.name as string;
+  const cpf: string = req.body.cpf as string;
+  const receiver: string = req.body.receiver as string;
+  const cpfReceiver: string = req.body.cpfReceiver as string;
+  const value: number = Number(req.body.value);
+  const index = users.findIndex((p) => {
+    return p.cpf === cpf;
+  });
+  const indexReceiver = users.findIndex((p) => {
+    return p.cpf === cpfReceiver;
+  });
+
+  try {
+    if (!name || !cpf || !receiver || !cpfReceiver || !value) {
+      throw new Error("Body invalid!");
+    }
+    if (index === -1) {
+      errorCode = 404;
+      throw new Error("User not found!");
+    }
+    if (indexReceiver === -1) {
+      errorCode = 404;
+      throw new Error("Receiver not found!");
+    }
+    if (value > users[index].balance) {
+      throw new Error("You do not have enough balance for this transaction.");
+    }
+
+    users[index].balance -= value;
+    users[indexReceiver].balance += value;
+
+    res.status(200).send("Transfer successful!");
+  } catch (error) {
+    res.status(errorCode).send(error.message);
+  }
+});
+
+app.get("/users", (req: Request, res: Response) => {
+  let errorCode = 400;
+  try {
+    res.status(200).send(users);
+  } catch (error) {
+    res.status(errorCode).send(error.message);
+  }
+});
