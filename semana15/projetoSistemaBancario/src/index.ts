@@ -108,19 +108,29 @@ app.put("/userPay", (req: Request, res: Response) => {
     if (!description || !datePayment || !value || !cpf) {
       throw new Error("Body invalid!");
     }
-
     if (indexUser === -1) {
       errorCode = 404;
       throw new Error("User not found!");
     }
-
+    if (req.body.value > users[indexUser].balance) {
+      throw new Error("You do not have enough balance for this transaction.");
+    }
     if (datePayment < today) {
-      res
-        .status(401)
-        .send("The payment date cannot be greater than the current date.");
+      errorCode = 401;
+      throw new Error(
+        "The payment date cannot be greater than the current date."
+      );
     }
 
-    res.send(200);
+    users[indexUser].spending.push({
+      value: value,
+      date: datePayment,
+      description: description,
+    });
+
+    users[indexUser].balance -= value;
+
+    res.status(200).send(users[indexUser]);
   } catch (error) {
     res.status(errorCode).send(error.message);
   }
