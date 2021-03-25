@@ -1,4 +1,11 @@
-import knex from "knex";
-import { Request, Response } from "express";
+import connection from "./connection";
 
-const createUser = (name: string, nickname: string, email: string) => {};
+export const createUser = async (
+  name: string,
+  nickname: string,
+  email: string
+): Promise<any> => {
+  await connection
+    .insert({ name: name, nickname: nickname, email: email })
+    .into(`users`);
+};

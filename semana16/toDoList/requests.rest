@@ -1,0 +1,9 @@
+//CREATE USER
+PUT http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "name": "teste1",
+  "nickname": "testeste1",
+  "email": "te1ste@gmail.com"
+}
