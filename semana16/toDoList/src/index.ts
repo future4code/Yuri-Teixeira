@@ -1,7 +1,8 @@
 import app from "./app";
 import express, { Request, Response } from "express";
-import { createUser } from "./reqFunctions";
+import { createUser, getUserById } from "./reqFunctions";
 
+//CREATE USER
 app.put("/user", async (req: Request, res: Response) => {
   let errorCode = 400;
   try {
@@ -20,3 +21,29 @@ app.put("/user", async (req: Request, res: Response) => {
     res.status(errorCode).send(error.message);
   }
 });
+
+//GET USER BY ID
+app.get(
+  "/user/:id",
+  async (req: Request, res: Response): Promise<any> => {
+    let errorCode = 400;
+    const id: number = Number(req.params.id);
+
+    try {
+      if (isNaN(id)) {
+        throw new Error("Invalid id!");
+      }
+      
+      const result = await getUserById(id.toString());
+      
+      if (result.length === 0) {
+        errorCode = 404;
+        throw new Error("User not found!");
+      }
+
+      res.status(200).send(result[0]);
+    } catch (error) {
+      res.status(errorCode).send(error.message);
+    }
+  }
+);

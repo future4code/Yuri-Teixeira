@@ -3,7 +3,11 @@ PUT http://localhost:3000/user
 Content-Type: application/json
 
 {
-  "name": "teste1",
-  "nickname": "testeste1",
-  "email": "te1ste@gmail.com"
+  "name": "s",
+  "nickname": "d",
+  "email": "te1ssste@gmail.com"
 }
+
+###
+
+GET http://localhost:3000/user/1
