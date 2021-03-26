@@ -1,0 +1,83 @@
+POST http://localhost:3000/Actor
+Content-Type: application/json
+
+{
+  "id": "050",
+  "name": "Keanu Reeves",
+  "salary": 1000000,
+  "gender": "male",
+  "birth_date": "1900-01-01"
+}
+
+###
+
+GET http://localhost:3000/Actors
+
+###
+PUT http://localhost:3000/Actor/050
+Content-Type: application/json
+
+{
+  "name": "Keanu Reeves CHANGED",
+  "salary": 10000,
+  "gender": "MALE",
+  "birth_date": "1999-01-01"
+}
+
+###
+
+POST http://localhost:3000/actorname
+Content-Type:  application/json
+
+{
+  "name": "Keanu Reeves CHANGED"
+}
+
+
+###
+
+GET http://localhost:3000/genderscount
+
+
+###
+PUT http://localhost:3000/ActorChangeSalary/002
+Content-Type: application/json
+
+{
+  "salary": 1
+}
+
+###
+DELETE http://localhost:3000/ActorRemove/050
+
+###
+
+GET http://localhost:3000/ActorSalaryAvg
+Content-Type: application/json
+
+{
+  "gender": "female"
+}
+
+
+###
+GET http://localhost:3000/Actor/001
+
+
+###
+POST http://localhost:3000/createMovie
+Content-Type: application/json
+
+{
+  "nome": "teste", 
+  "sinopse": "teste", 
+  "lancamento": "1900-01-01", 
+  "avaliacao": 99, 
+  "playing_limit_date": "1900-01-01"
+}
+
+###
+GET http://localhost:3000/movies
+
+###
+GET http://localhost:3000/searchMovie?name=teste
