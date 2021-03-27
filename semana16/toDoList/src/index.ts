@@ -96,10 +96,15 @@ app.put(
     const limitDate: string = req.body.limitDate as string;
     const status: string = req.body.status as string;
     const id_createdby: number = Number(req.body.id_createdby);
+    const dateDiff: number =
+      moment(req.body.limitDate, "DD/MM/YYYY").unix() - moment().unix();
 
     try {
       if (!title || !description || !limitDate || !status || !id_createdby) {
         throw new Error("Invalid body!");
+      }
+      if (dateDiff <= 0) {
+        throw new Error("The deadline must be greater than the current date.");
       }
 
       const result = await createTask(
@@ -109,7 +114,7 @@ app.put(
         status,
         id_createdby.toString()
       );
-      
+
       res.status(200).send(result);
     } catch (error) {
       res.status(errorCode).send(error.message);
@@ -131,7 +136,23 @@ app.get("/tasks/:id", async (req: Request, res: Response) => {
   let errorCode = 400;
   try {
     const result = await getTasks(req.params.id);
-    res.status(200).send(result);
+
+    if (result.length == 0) {
+      throw new Error("Task not found!");
+    }
+
+    const task = {
+      title: result[0][0].title,
+      description: result[0][0].description,
+      limitDate: moment(result[0][0].limitDate, "YYYY-MM-DD").format(
+        "DD/MM/YYYY"
+      ),
+      status: result[0][0].status,
+      id_createdby: result[0][0].id_createdby,
+      creatorUserNickname: result[0][0].creatorUserNickname,
+    };
+
+    res.status(200).send(task);
   } catch (error) {
     res.status(errorCode).send(error.message);
   }

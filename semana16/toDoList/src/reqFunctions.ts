@@ -49,10 +49,16 @@ export const createTask = async (
 };
 
 export const getTasks = async (id?: string): Promise<any> => {
-  if(!id){
-    return  await connection(`tasks`);
+  if (!id) {
+    return await connection(`tasks`);
   } else {
-    return  await connection(`tasks`).where({ id: id });
+    return await connection.raw(`
+      select
+      a.*,
+      b.name  as creatorUserNickname
+      from tasks a
+      inner join users b on (a.id_createdby = b.id)
+      where a.id = ${id}
+    `);
   }
- 
 };
