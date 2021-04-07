@@ -9,3 +9,14 @@ export const newUser = async (user: userType) => {
     role: user.role,
   });
 };
+
+export const getUserByEmail = async (email: string) => {
+  const result = await connection(`users`)
+    .select(`id`, `password`, `role`)
+    .where({ email: email });
+  return result[0];
+};
+
+export const deleteUser = async (id: string) => {
+  return await connection.raw(`delete from users where id = '${id}'`);
+};

@@ -1,10 +1,17 @@
-import jwt from "jsonwebtoken";
-import dontenv from "dotenv";
+import * as jwt from "jsonwebtoken";
+import dotenv from "dotenv";
 
-dontenv.config();
+dotenv.config();
 
-export const genToken = async (valueToEncode: any) => {
+export const genToken = (valueToEncode: any) => {
   const key: string = process.env.KEY as string;
-  const result = await jwt.sign(valueToEncode, key, { expiresIn: "2h" });
-  return result;
+  const token = jwt.sign({ valueEncoded: valueToEncode }, key!, {
+    expiresIn: "1day",
+  });
+  return token;
+};
+
+export const verToken = (valueToVerify: any) => {
+  const { valueEncoded } = jwt.verify(valueToVerify, process.env.KEY!) as any;
+  return valueEncoded;
 };

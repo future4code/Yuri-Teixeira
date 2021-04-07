@@ -1,5 +1,5 @@
-import * as uuid from "uuid";
+import {v4} from "uuid";
 
-const newID = uuid.v4();
+const newID = () => {return v4()};
 
 export default newID;
