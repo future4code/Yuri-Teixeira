@@ -1,0 +1,17 @@
+GET http://localhost:3000/users?name=nat
+
+###
+
+GET http://localhost:3000/users/CX
+
+###
+
+GET http://localhost:3000/ordUsers/ASC
+
+###
+
+GET http://localhost:3000/userspage/3
+
+###
+
+GET http://localhost:3000/final/4?orderBy=DESC&name=a
