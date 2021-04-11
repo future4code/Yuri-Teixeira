@@ -10,6 +10,7 @@ import { userType, recipeType } from "./types/types";
 import createUser from "./functions/createUser";
 import signIn from "./functions/signIn";
 import viewProfile from "./functions/viewProfile";
+import viewRecipe from "./functions/viewRecipe";
 import createRecipe from "./functions/createRecipe";
 
 app.post("/signup", async (req: Request, res: Response) => {
@@ -102,6 +103,26 @@ app.post("/recipe", async (req: Request, res: Response) => {
     res
       .status(200)
       .send({ message: "Recipe successfully created.", result: result });
+  } catch (error) {
+    res.status(errorCode).send(error.message);
+  }
+});
+
+app.get("/recipes/:id", async (req: Request, res: Response) => {
+  let errorCode = 400;
+  try {
+    const id: string = req.params.id as string;
+    if (!id) {
+      throw new Error("Invalid ID!");
+    }
+
+    const result = await viewRecipe(id);
+
+    if (result.length < 1) {
+      throw new Error("Recipe not found!");
+    }
+
+    res.status(200).send(result);
   } catch (error) {
     res.status(errorCode).send(error.message);
   }

@@ -26,10 +26,4 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2YWx1ZUVuY29kZWQiOiJiMTUw
 
 
 ###
-POST http://localhost:3003/recipe
-Content-Type: application/json
-
-{
-  "title": "teste",
-  "description": "teste teste"
-}
+GET http://localhost:3003/recipes/8e4c5efb-e177-43a7-bf8b-628b50dcf471
