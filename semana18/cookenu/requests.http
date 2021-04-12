@@ -1,0 +1,29 @@
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+  "name": "yuri",
+  "email": "yuri@",
+  "password": "yuri123"
+}
+
+###
+
+POST http://localhost:3003/signin
+Content-Type: application/json
+
+{
+  "name": "admin",
+  "email": "admin@",
+  "password": "admin"
+}
+
+###
+
+GET http://localhost:3003/users/profile
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2YWx1ZUVuY29kZWQiOiJiMTUwYjQxYy0zOGE0LTRiMWItYjA5Yi00MDQ1Zjc5MjM5ZDciLCJpYXQiOjE2MTgwOTE3NjAsImV4cCI6MTYxODE3ODE2MH0.tpQY0Xi0UWbH55ivJP9Wwe6Xu09p9MaxyUgeWty1njw
+
+
+###
+GET http://localhost:3003/recipes/8e4c5efb-e177-43a7-bf8b-628b50dcf471
