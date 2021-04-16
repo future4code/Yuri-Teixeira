@@ -1,0 +1,37 @@
+POST http://localhost:3003/users/signup
+Content-Type:  application/json
+
+{
+  "email": "yuri",
+  "password": "yuri",
+  "role": "NORMAL" 
+}
+
+###
+POST http://localhost:3003/users/signin
+Content-Type: application/json
+
+{
+  "email": "yuri",
+  "password": "yuri"
+}
+
+###
+
+POST http://localhost:3003/users/profile
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin"
+}
+
+###
+
+DELETE http://localhost:3003/users/50830608-fb82-4f4a-8854-de3baa23c38c
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin"
+}
