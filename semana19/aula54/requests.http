@@ -1,0 +1,29 @@
+###
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+  "name": "night lovell",
+  "email": "night@",
+  "password": "night",
+  "role": "ADMIN"
+}
+
+###
+
+POST http://localhost:3003/signin
+Content-Type: application/json
+
+{
+  "email": "yuri@",
+  "password": "yuri"
+}
+
+###
+GET http://localhost:3003/all
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4M2VjZDY2LTM1Y2ItNGM1NS1iNzkwLWU5ODQwNWJkYmM3ZCIsImlhdCI6MTYxODI4NDgwNiwiZXhwIjoxNjE4MzcxMjA2fQ.Tcnop8Fg8w44WQQgD3lC7FHk9u4AXhctij5bmicwfaA
+
+
+###
+
+DELETE http://localhost:3003/fba60aa5-e3b0-445b-95bc-d649604f1354
