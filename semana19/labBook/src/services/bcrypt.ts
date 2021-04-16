@@ -1,14 +1,16 @@
-import * as bcrypt from "bcryptjs";
+import * as bcryptjs from "bcryptjs";
 
-export const hash = async (plainText: string): Promise<string> => {
-  const rounds = Number(process.env.BCRYPT_COST);
-  const salt = await bcrypt.genSalt(rounds);
-  return bcrypt.hash(plainText, salt);
-};
+export default class bcrypt {
+   hash = async (plainText: string): Promise<string> => {
+    const rounds = Number(process.env.BCRYPT_COST);
+    const salt = await bcryptjs.genSalt(rounds);
+    return bcryptjs.hash(plainText, salt);
+  };
 
-export const compare = async (
-  plainText: string,
-  cypherText: string
-): Promise<boolean> => {
-  return bcrypt.compare(plainText, cypherText);
-};
+   compare = async (
+    plainText: string,
+    cypherText: string
+  ): Promise<boolean> => {
+    return bcryptjs.compare(plainText, cypherText);
+  };
+}
