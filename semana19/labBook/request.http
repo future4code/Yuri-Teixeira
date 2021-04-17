@@ -26,3 +26,6 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1YjU1MTM0LTE3MmMt
   "description": "bbbnb",
   "type": "normal"
 }
+
+###
+GET http://localhost:3003/post/a2880860-e995-45f0-a54b-906e13622270
