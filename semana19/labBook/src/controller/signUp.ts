@@ -13,4 +13,4 @@ const signUp = async (req: Request, res: Response) => {
   }
 };
 
-export default signUp;
+export default signUp; 

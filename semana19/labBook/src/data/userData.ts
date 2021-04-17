@@ -10,7 +10,7 @@ import { userType } from "../model/userModel";
       password: newUser.password,
     });
   } catch (error) {
-    throw new Error(error.message);
+    throw new Error('Data: ' +error.message);
   }
 };
 
