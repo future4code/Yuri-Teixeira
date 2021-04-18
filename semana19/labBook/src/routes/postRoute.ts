@@ -1,10 +1,10 @@
 import express from "express";
-import createPost from "../controller/createPost";
-import getPostById from "../controller/getPostById";
+import _PostController from "../controller/postController";
 
 const postRoute = express.Router();
+const PostController = new _PostController();
 
-postRoute.get("/:id", getPostById);
-postRoute.put("/", createPost);
+postRoute.get("/:id", PostController.getPostById);
+postRoute.put("/", PostController.createPost);
 
 export default postRoute;
