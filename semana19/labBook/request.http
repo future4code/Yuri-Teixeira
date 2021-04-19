@@ -2,9 +2,9 @@ POST http://localhost:3003/user/signup
 Content-Type: application/json
 
 {
-  "name": "admin",
-  "email": "admin@",
-  "password": "admin"
+  "name": "a",
+  "email": "a@",
+   "password": "a"
 }
 
 ###
@@ -12,19 +12,19 @@ POST http://localhost:3003/user/signin
 Content-Type: application/json
 
 {
-  "email": "yuri@",
-  "password": "123"
+  "email": "a@",
+  "password": "a"
 }
 
 ###
 PUT http://localhost:3003/post
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1YjU1MTM0LTE3MmMtNGNiOS04ZTQ2LTU4MjFmZjExY2VmOSIsImlhdCI6MTYxODYxNDI2OCwiZXhwIjoxNjE4NzAwNjY4fQ.RWcF7S9bLB0syCL4zoCCPrmVeScosLjIrYRhA-Pkroo
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIwMTUwNzM3LTdkZTMtNGViNi05ZDRmLTRjZWJiMjNmZTIwNyIsImlhdCI6MTYxODc5MDM3NywiZXhwIjoxNjE4ODc2Nzc3fQ.Dwu-mrnztwdf5XwCGVzSdEEKXIYbQhyhnmWSuCnY2fw
 
 {
   "photo": "aaaa",
   "description": "bbbnb",
-  "type": "normal"
+  "type": "a"
 }
 
 ###

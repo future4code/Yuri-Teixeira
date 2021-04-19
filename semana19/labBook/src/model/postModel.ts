@@ -1,14 +1,14 @@
-export enum POST_TYPES {
-  NORMAL = "normal",
-  EVENT = "event",
-}
-
-export type postType = {
-  id?: string;
+export interface IPostType {
+  id: string;
   photo: string;
   description: string;
-  type: POST_TYPES;
+  type: "normal" | "event";
   createdAt: string;
   authorId: string;
-};
+}
 
+export interface IInputPostDTO {
+  photo: string;
+  description: string;
+  type: "normal" | "event";
+}

@@ -1,9 +1,15 @@
-export type authenticationData = {
+export interface IAuthenticationUserData {
   id: string;
-};
+}
 
-export type userType ={
+export interface IUser {
   id: string;
+  name: string;
+  email: string;
+  password: string;
+}
+
+export interface IInputUserDTO {
   name: string;
   email: string;
   password: string;

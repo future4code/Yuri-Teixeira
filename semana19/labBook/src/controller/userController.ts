@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import _UserLogic from "../logic/userLogic.ts";
+import { IInputUserDTO } from "../model/userModel";
 
 const UserLogic = new _UserLogic();
 
@@ -7,9 +8,13 @@ export default class UserController {
   // Sign up and return token
   signUp = async (req: Request, res: Response) => {
     try {
-      const { name, email, password } = req.body;
+      const inputUserDTO: IInputUserDTO = {
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+      };
 
-      const token = await UserLogic.createUserLogic(name, email, password);
+      const token: string = await UserLogic.createUserLogic(inputUserDTO);
 
       res.status(200).send({ token });
     } catch (error) {
@@ -22,7 +27,7 @@ export default class UserController {
     try {
       const { email, password } = req.body;
 
-      const token = await UserLogic.getUserByEmailLogic(email, password);
+      const token: string = await UserLogic.getUserByEmailLogic(email, password);
 
       res.status(200).send({ token });
     } catch (error) {

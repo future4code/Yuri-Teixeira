@@ -1,10 +1,11 @@
 import connection from "../controller/connection";
-import { postType } from "../model/postModel";
+import { IPostType } from "../model/postModel";
 
 export default class PostData {
-  createPostData = async (post: postType) => {
+
+  createPostData = async (post: IPostType): Promise<void> => {
     try {
-      return await connection(`labook_posts`).insert({
+      await connection(`labook_posts`).insert({
         id: post.id,
         photo: post.photo,
         description: post.description,
@@ -17,7 +18,7 @@ export default class PostData {
     }
   };
 
-  getPostByIdData = async (id: string) => {
+  getPostByIdData = async (id: string): Promise<IPostType> => {
     try {
       const result = await connection.raw(
         `select * from labook_posts where id = '${id}'`
@@ -26,6 +27,7 @@ export default class PostData {
       if (!result[0]) {
         throw new Error("Post not found");
       }
+
       return result[0];
     } catch (error) {
       throw new Error(error.message);
