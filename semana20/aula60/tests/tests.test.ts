@@ -1,5 +1,6 @@
 import UserBusiness from "../src/business/UserBusiness";
 import IdGenerator from "./mockNewUserId";
+import { USER_ROLES } from "../src/model/User";
 
 describe("Nova suite de testes", () => {
   test("testando ID", async () => {
@@ -39,6 +40,18 @@ describe("Nova suite de testes", () => {
       expect(error.statusCode).toBe(404);
       expect(error.message).toEqual("User not found");
       console.log(error.message);
+    }
+  });
+
+  test("desafio 3/4: ", async () => {
+    expect.assertions(2);
+    try {
+      await UserBusiness.getAllUsers(USER_ROLES.NORMAL);
+    } catch (error) {
+      expect(error.message).toEqual(
+        "You must be an admin to access this endpoint"
+      );
+      expect(error.statusCode).toBe(401);
     }
   });
 });
