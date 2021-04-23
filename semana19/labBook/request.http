@@ -1,0 +1,31 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+  "name": "a",
+  "email": "a@",
+   "password": "a"
+}
+
+###
+POST http://localhost:3003/user/signin
+Content-Type: application/json
+
+{
+  "email": "a@",
+  "password": "a"
+}
+
+###
+PUT http://localhost:3003/post
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIwMTUwNzM3LTdkZTMtNGViNi05ZDRmLTRjZWJiMjNmZTIwNyIsImlhdCI6MTYxODc5MDM3NywiZXhwIjoxNjE4ODc2Nzc3fQ.Dwu-mrnztwdf5XwCGVzSdEEKXIYbQhyhnmWSuCnY2fw
+
+{
+  "photo": "aaaa",
+  "description": "bbbnb",
+  "type": "a"
+}
+
+###
+GET http://localhost:3003/post/a2880860-e995-45f0-a54b-906e13622270
