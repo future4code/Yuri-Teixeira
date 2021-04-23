@@ -1,0 +1,13 @@
+{
+  "name": "LAMA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "clear && jest",
+    "start": "tsc && nodemon ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
