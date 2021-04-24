@@ -1,8 +1,4 @@
-import express from "express";
+import app from "./controller/app";
+import userRoute from "./routes/userRoute";
 
-const app = express();
-const port = 3003;
-
-app.listen(port, () => {
-  console.log(`App is running on port ${port}`);
-});
+app.use("/user", userRoute);
