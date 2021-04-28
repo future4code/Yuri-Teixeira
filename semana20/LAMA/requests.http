@@ -1,0 +1,17 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+  "name": "yuri",
+  "email": "yuri@",
+  "password": "123",
+  "role": "NORMAL"
+}
+###
+POST http://localhost:3003/user/signin
+Content-Type: application/json
+
+{
+  "email": "yuri@",
+  "password": "12w3"
+}
